@@ -1,0 +1,73 @@
+{
+  "name": "weeshop/weeshop-project",
+  "description": "Project template for WeeShop with Composer",
+  "type": "project",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://www.weeshop.org",
+  "support": {
+    "docs": "https://www.weeshop.org",
+    "issues": "https://www.drupal.org/project/issues/weeshop?categories=All"
+  },
+  "repositories": {
+    "drupal": {
+      "type": "composer",
+      "url": "https://packages.drupal.org/8"
+    }
+  },
+  "require": {
+    "composer/installers": "^1.2",
+    "drupal/console": "~1.0",
+    "drupal/core-composer-scaffold": "^8.9",
+    "drupal/core-recommended": "^8.9",
+    "drush/drush": "~9.0",
+    "oomphinc/composer-installers-extender": "^1.1",
+    "wikimedia/composer-merge-plugin": "^1.4",
+    "zaporylie/composer-drupal-optimizations": "^1.1",
+    "weeshop/weeshop": "^1.0"
+  },
+  "require-dev": {
+    "drupal/core-dev": "^8.9",
+    "drupal/devel": "^2.1",
+    "drupal/devel_entity_updates": "^1.0"
+  },
+  "conflict": {
+    "drupal/drupal": "*"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "sort-packages": true
+  },
+  "extra": {
+    "drupal-scaffold": {
+      "locations": {
+        "web-root": "web/"
+      }
+    },
+    "installer-types": ["library", "bower-asset", "npm-asset"],
+    "installer-paths": {
+      "web/core": ["type:drupal-core"],
+      "web/libraries/{$name}": ["type:drupal-library", "type:git", "type:bower-asset", "type:npm-asset"],
+      "web/modules/contrib/{$name}": ["type:drupal-module"],
+      "web/profiles/contrib/{$name}": ["type:drupal-profile"],
+      "web/themes/contrib/{$name}": ["type:drupal-theme"],
+      "drush/Commands/contrib/{$name}": ["type:drupal-drush"],
+      "web/modules/custom/{$name}": ["type:drupal-custom-module"],
+      "web/themes/custom/{$name}": ["type:drupal-custom-theme"]
+    },
+    "merge-plugin": {
+      "include": [
+          "web/modules/custom/*/composer.json",
+          "web/themes/custom/*/composer.json",
+          "web/profiles/custom/*/composer.json"
+      ],
+      "recurse": true,
+      "replace": false,
+      "ignore-duplicates": false,
+      "merge-dev": true,
+      "merge-extra": false,
+      "merge-extra-deep": false,
+      "merge-scripts": false
+    }
+  }
+}
