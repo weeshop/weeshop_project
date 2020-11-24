@@ -9542,16 +9542,16 @@
         },
         {
             "name": "weeshop/weeshop",
-            "version": "1.0.0-beta10",
+            "version": "1.0.0-beta11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/weeshop/WeeShop.git",
-                "reference": "c2a71d13e80d0696d14181453b2ea8883ad1480d"
+                "reference": "9d0f513edb576237e8784fa824a55da3ad7655e9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/weeshop/WeeShop/zipball/c2a71d13e80d0696d14181453b2ea8883ad1480d",
-                "reference": "c2a71d13e80d0696d14181453b2ea8883ad1480d",
+                "url": "https://api.github.com/repos/weeshop/WeeShop/zipball/9d0f513edb576237e8784fa824a55da3ad7655e9",
+                "reference": "9d0f513edb576237e8784fa824a55da3ad7655e9",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -9584,7 +9584,7 @@
             ],
             "description": "WeeShop 1.x installation profile",
             "homepage": "https://www.drupal.org/project/weeshop",
-            "time": "2020-11-24T09:26:56+00:00"
+            "time": "2020-11-24T09:45:17+00:00"
         },
         {
             "name": "wikimedia/composer-merge-plugin",
