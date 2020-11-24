@@ -5180,6 +5180,51 @@
             }
         },
         {
+            "name": "drupal/weeshop_alpha",
+            "version": "1.0.0-beta4",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/weeshop_alpha.git",
+                "reference": "8.x-1.0-beta4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/weeshop_alpha-8.x-1.0-beta4.zip",
+                "reference": "8.x-1.0-beta4",
+                "shasum": "544cc85857dbb11f4815032a32e33a9ff62cc00d"
+            },
+            "require": {
+                "drupal/core": "~8.0"
+            },
+            "type": "drupal-theme",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0-beta4",
+                    "datestamp": "1606217909",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Project has not opted into security advisory coverage!"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "canvaskent",
+                    "homepage": "https://www.drupal.org/user/2840367"
+                }
+            ],
+            "description": "Front end theme for WeeShop.",
+            "homepage": "https://www.drupal.org/project/weeshop_alpha",
+            "support": {
+                "source": "https://git.drupalcode.org/project/weeshop_alpha",
+                "issues": "https://www.drupal.org/project/issues/weeshop_alpha"
+            }
+        },
+        {
             "name": "drupal/weeshop_alpha_components",
             "version": "1.0.0-beta1",
             "source": {
@@ -9542,16 +9587,16 @@
         },
         {
             "name": "weeshop/weeshop",
-            "version": "1.0.0-beta11",
+            "version": "1.0.0-beta12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/weeshop/WeeShop.git",
-                "reference": "9d0f513edb576237e8784fa824a55da3ad7655e9"
+                "reference": "ca506e2ad3e773e16ff085a98b6a882ffb2589bd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/weeshop/WeeShop/zipball/9d0f513edb576237e8784fa824a55da3ad7655e9",
-                "reference": "9d0f513edb576237e8784fa824a55da3ad7655e9",
+                "url": "https://api.github.com/repos/weeshop/WeeShop/zipball/ca506e2ad3e773e16ff085a98b6a882ffb2589bd",
+                "reference": "ca506e2ad3e773e16ff085a98b6a882ffb2589bd",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -9574,6 +9619,7 @@
                 "drupal/search_api": "~1.0",
                 "drupal/search_api_autocomplete": "^1.0",
                 "drupal/swiftmailer": "~1.0",
+                "drupal/weeshop_alpha": "^1.0",
                 "drupal/weeshop_alpha_components": "^1.0",
                 "drupal/weeshop_demo": "^1.0"
             },
@@ -9584,7 +9630,7 @@
             ],
             "description": "WeeShop 1.x installation profile",
             "homepage": "https://www.drupal.org/project/weeshop",
-            "time": "2020-11-24T09:45:17+00:00"
+            "time": "2020-11-24T11:40:57+00:00"
         },
         {
             "name": "wikimedia/composer-merge-plugin",
