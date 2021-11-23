@@ -21,6 +21,7 @@
         "drupal/core-project-message": "^9.2",
         "drupal/core-recommended": "^9.2",
         "drush/drush": "^10.6",
+        "weeshop/weeshop": "dev-8.x-1.x",
         "wikimedia/composer-merge-plugin": "^2.0"
     },
     "require-dev": {
