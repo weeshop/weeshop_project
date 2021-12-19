@@ -8,8 +8,8 @@ services:
       - "8081:80"
     volumes:
       - ".:/app:cached"
-      - "/root/.composer:/root/.composer:cached"
-      # - "/Users/kentkent/.composer:/root/.composer:cached"
+      # - "/root/.composer:/root/.composer:cached"
+      - "/Users/kentkent/.composer:/root/.composer:cached"
     restart: always
     command: ["supervisord", "&&", "composer", "config", "-g", "repo.packagist", "composer", "https://mirrors.aliyun.com/composer/"]
     environment:
