@@ -26,6 +26,9 @@ drupal_config
 .editorconfig
 .gitattributes
 
+# Ignore vscode meta data.
+/.vscode/
+
 # Ignore docker data
 /data
 /SSL/
