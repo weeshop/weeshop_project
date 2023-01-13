@@ -1,27 +1,52 @@
-version: '3.1'
+version: '3.9'
 
 services:
 
   web:
-    image: webdevops/php-apache:8.0
+    image: webdevops/php-apache-dev:8.1-alpine
     ports:
       - "8081:80"
     volumes:
       - ".:/app:cached"
-      # - "/root/.composer:/root/.composer:cached"
-      - "/Users/kentkent/.composer:/root/.composer:cached"
+      - "${USER_HOME}/.composer:/home/application/.composer:cached"
+      - "${USER_HOME}/.ssh:/home/application/.ssh:cached"
     restart: always
-    command: ["supervisord", "&&", "composer", "config", "-g", "repo.packagist", "composer", "https://mirrors.aliyun.com/composer/"]
+    working_dir: /app
+    user: application
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+      - "demo.weeshop.org:host-gateway"
     environment:
       TZ: Asia/Shanghai
       PHP_DATE_TIMEZONE: Asia/Shanghai
       WEB_DOCUMENT_ROOT: /app/web
-      WEB_ALIAS_DOMAIN: weeshop.test
-      PHP_MEMORY_LIMIT: 1G
+      WEB_ALIAS_DOMAIN: demo.weeshop.org
+      PHP_MEMORY_LIMIT: 2G
       XDEBUG_DISCOVER_CLIENT_HOST: "true"
       XDEBUG_CLIENT_HOST: host.docker.internal
       XDEBUG_MODE: debug
       XDEBUG_START_WITH_REQUEST: "yes"
+      # This line is necessary which support cli debug in remote host.
+      # "localhost" is the mapping server configuration name set in PhpStorm.
+      PHP_IDE_CONFIG: "serverName=www.drupalcode.cn"
+      FPM_PM_MAX_CHILDREN: 500
+      FPM_PROCESS_MAX: 100
+      # opcached
+      PHP_OPCACHE_MEMORY_CONSUMPTION: 256
+      PHP_OPCACHE_MAX_ACCELERATED_FILES: 1000000
+      PHP_OPCACHE_VALIDATE_TIMESTAMPS: 1
+      PHP_OPCACHE_REVALIDATE_FREQ: 1
+      PHP_OPCACHE_INTERNED_STRINGS_BUFFER: 16
+      php.opcache.save_comments: 1
+      php.opcache.max_wasted_percentage: 100
+      php.opcache.enable_cli: 1
+      php.opcache.file_cache: "/app/data/opcache"
+      php.opcache.file_cache_only: 0
+      php.opcache.enable: 1
+      # php8 JIT
+      # Setting jit_buffer_size too high wil make php crash.
+      # php.opcache.jit_buffer_size: 100M
+      php.opcache.jit: 1255
   db:
     image: mysql:8
     ports:
@@ -33,3 +58,24 @@ services:
       TZ: Asia/Shanghai
       MYSQL_ROOT_PASSWORD: 123
       MYSQL_DATABASE: drupal
+  phpstorm:
+    image: webdevops/php:8.1-alpine
+    volumes:
+      - ".:/app:cached"
+      - "${USER_HOME}/.composer:/home/application/.composer:cached"
+      - "${USER_HOME}/.ssh:/home/application/.ssh:cached"
+    restart: always
+    working_dir: /app
+    user: application
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+      - "demo.weeshop.org:host-gateway"
+    environment:
+      WEB_ALIAS_DOMAIN: demo.weeshop.org
+      TZ: Asia/Shanghai
+      PHP_DATE_TIMEZONE: Asia/Shanghai
+      WEB_DOCUMENT_ROOT: /app/web
+      PHP_MEMORY_LIMIT: 2G
+      # This line is necessary which support cli debug in remote host.
+      # "localhost" is the mapping server configuration name set in PhpStorm.
+      PHP_IDE_CONFIG: "serverName=localhost"

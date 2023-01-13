@@ -32,3 +32,4 @@ drupal_config
 # Ignore docker data
 /data
 /SSL/
+/.env
