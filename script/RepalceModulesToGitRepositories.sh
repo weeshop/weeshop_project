@@ -14,6 +14,9 @@ cd ../../themes/contrib || exit
 rm -rf ./weeshop_alpha
 git clone git@github.com:weeshop/weeshop_alpha.git
 
+rm -rf ./weeshop_molla
+git clone git@github.com:weeshop/weeshop_molla.git
+
 
 cd ../../profiles/contrib || exit
 

@@ -8,12 +8,16 @@
         "docs": "https://www.weeshop.org",
         "issues": "https://www.drupal.org/project/issues/weeshop?categories=All"
     },
-    "repositories": {
-        "drupal": {
+    "repositories": [
+        {
             "type": "composer",
             "url": "https://packages.drupal.org/8"
+        },
+        {
+            "type": "vcs",
+            "url":  "git@github.com:weeshop/weeshop_molla.git"
         }
-    },
+    ],
     "require": {
         "composer/installers": "^1.12",
         "cweagans/composer-patches": "^1.7",
