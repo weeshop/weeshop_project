@@ -10538,12 +10538,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/weeshop/WeeShop.git",
-                "reference": "16136df3b13da0182abd7e33fbe16619941c3859"
+                "reference": "95933135140c2a004ab531270fc7924a855326de"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/weeshop/WeeShop/zipball/16136df3b13da0182abd7e33fbe16619941c3859",
-                "reference": "16136df3b13da0182abd7e33fbe16619941c3859",
+                "url": "https://api.github.com/repos/weeshop/WeeShop/zipball/95933135140c2a004ab531270fc7924a855326de",
+                "reference": "95933135140c2a004ab531270fc7924a855326de",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -10587,7 +10587,7 @@
                 "issues": "https://github.com/weeshop/WeeShop/issues",
                 "source": "https://github.com/weeshop/WeeShop/tree/8.x-1.x"
             },
-            "time": "2022-01-04T07:28:43+00:00"
+            "time": "2023-01-13T07:11:22+00:00"
         },
         {
             "name": "wikimedia/composer-merge-plugin",
