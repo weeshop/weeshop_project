@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c7f7a344f8ca135f81ead86ea6e050d8",
+    "content-hash": "b2b089edc994c54873ee96cddc273f53",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -10538,12 +10538,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/weeshop/WeeShop.git",
-                "reference": "95933135140c2a004ab531270fc7924a855326de"
+                "reference": "ecde23176a826133af4ae8d109dee403029933a5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/weeshop/WeeShop/zipball/95933135140c2a004ab531270fc7924a855326de",
-                "reference": "95933135140c2a004ab531270fc7924a855326de",
+                "url": "https://api.github.com/repos/weeshop/WeeShop/zipball/ecde23176a826133af4ae8d109dee403029933a5",
+                "reference": "ecde23176a826133af4ae8d109dee403029933a5",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -10587,7 +10587,7 @@
                 "issues": "https://github.com/weeshop/WeeShop/issues",
                 "source": "https://github.com/weeshop/WeeShop/tree/8.x-1.x"
             },
-            "time": "2023-01-13T07:11:22+00:00"
+            "time": "2023-01-13T08:30:43+00:00"
         },
         {
             "name": "wikimedia/composer-merge-plugin",
