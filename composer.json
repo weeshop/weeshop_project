@@ -42,6 +42,9 @@
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
+    "scripts": {
+        "post-update-cmd": "script/RepalceModulesToGitRepositories.sh"
+    },
     "config": {
         "sort-packages": true,
         "allow-plugins": {

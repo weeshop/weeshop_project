@@ -58,7 +58,7 @@ services:
       TZ: Asia/Shanghai
       MYSQL_ROOT_PASSWORD: 123
       MYSQL_DATABASE: drupal
-  phpstorm:
+  cli:
     image: webdevops/php:8.1-alpine
     volumes:
       - ".:/app:cached"
