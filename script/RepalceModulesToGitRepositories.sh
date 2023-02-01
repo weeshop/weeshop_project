@@ -8,6 +8,8 @@ git clone git@github.com:weeshop/weeshop_demo.git
 rm -rf ./weeshop_alpha_components
 git clone git@github.com:weeshop/weeshop_alpha_components.git
 
+rm -rf ./weeshop_molla_supports
+git clone git@github.com:weeshop/weeshop_molla_supports.git
 
 cd ../../themes/contrib || exit
 
