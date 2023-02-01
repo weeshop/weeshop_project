@@ -5084,12 +5084,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:weeshop/weeshop_molla.git",
-                "reference": "5c51e24acd0f3e083aba45b8df52a059b027ab59"
+                "reference": "ba0ac002594d6ce4f26d176fd0269cc6a36f4ef4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/weeshop/weeshop_molla/zipball/5c51e24acd0f3e083aba45b8df52a059b027ab59",
-                "reference": "5c51e24acd0f3e083aba45b8df52a059b027ab59",
+                "url": "https://api.github.com/repos/weeshop/weeshop_molla/zipball/ba0ac002594d6ce4f26d176fd0269cc6a36f4ef4",
+                "reference": "ba0ac002594d6ce4f26d176fd0269cc6a36f4ef4",
                 "shasum": ""
             },
             "default-branch": true,
@@ -5103,7 +5103,7 @@
                 "issues": "https://www.drupal.org/project/issues/weeshop_molla",
                 "source": "https://github.com/weeshop/weeshop_molla/tree/1.0.x"
             },
-            "time": "2023-01-30T07:26:42+00:00"
+            "time": "2023-02-01T02:58:40+00:00"
         },
         {
             "name": "drush/drush",
