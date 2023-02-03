@@ -16,6 +16,10 @@
         {
             "type": "vcs",
             "url":  "git@github.com:weeshop/weeshop_molla.git"
+        },
+        {
+            "type": "vcs",
+            "url":  "git@github.com:weeshop/weeshop_molla_supports.git"
         }
     ],
     "require": {
