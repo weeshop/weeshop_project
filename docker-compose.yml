@@ -28,7 +28,7 @@ services:
       XDEBUG_START_WITH_REQUEST: "yes"
       # This line is necessary which support cli debug in remote host.
       # "localhost" is the mapping server configuration name set in PhpStorm.
-      PHP_IDE_CONFIG: "serverName=www.drupalcode.cn"
+      PHP_IDE_CONFIG: "serverName=localhost"
       FPM_PM_MAX_CHILDREN: 500
       FPM_PROCESS_MAX: 100
       # opcached
