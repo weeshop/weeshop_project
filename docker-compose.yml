@@ -22,6 +22,7 @@ services:
       WEB_DOCUMENT_ROOT: /app/web
       WEB_ALIAS_DOMAIN: demo.weeshop.org
       PHP_MEMORY_LIMIT: 2G
+      php.max_input_vars: 10000
       XDEBUG_DISCOVER_CLIENT_HOST: "true"
       XDEBUG_CLIENT_HOST: host.docker.internal
       XDEBUG_MODE: debug
