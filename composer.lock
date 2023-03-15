@@ -508,16 +508,16 @@
         },
         {
             "name": "consolidation/annotated-command",
-            "version": "4.8.0",
+            "version": "4.8.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/consolidation/annotated-command.git",
-                "reference": "68bc1a1dba31eaa174cb4bced9acbfa9013bca06"
+                "reference": "7f5dd1aafb93a10593ed70f3caa6a0cd5a32f0e3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/consolidation/annotated-command/zipball/68bc1a1dba31eaa174cb4bced9acbfa9013bca06",
-                "reference": "68bc1a1dba31eaa174cb4bced9acbfa9013bca06",
+                "url": "https://api.github.com/repos/consolidation/annotated-command/zipball/7f5dd1aafb93a10593ed70f3caa6a0cd5a32f0e3",
+                "reference": "7f5dd1aafb93a10593ed70f3caa6a0cd5a32f0e3",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -564,9 +564,9 @@
             "description": "Initialize Symfony Console commands from annotated command class methods.",
             "support": {
                 "issues": "https://github.com/consolidation/annotated-command/issues",
-                "source": "https://github.com/consolidation/annotated-command/tree/4.8.0"
+                "source": "https://github.com/consolidation/annotated-command/tree/4.8.2"
             },
-            "time": "2023-02-28T14:00:17+00:00"
+            "time": "2023-03-11T19:32:28+00:00"
         },
         {
             "name": "consolidation/config",
@@ -2372,17 +2372,17 @@
         },
         {
             "name": "drupal/commerce_shipping",
-            "version": "2.5.0",
+            "version": "2.6.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/commerce_shipping.git",
-                "reference": "8.x-2.5"
+                "reference": "8.x-2.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/commerce_shipping-8.x-2.5.zip",
-                "reference": "8.x-2.5",
-                "shasum": "5babd7126bd80fc20a7b0fc95fb7db5f1131b8de"
+                "url": "https://ftp.drupal.org/files/projects/commerce_shipping-8.x-2.6.zip",
+                "reference": "8.x-2.6",
+                "shasum": "29e24ea5133ec1fbb606902bcfcfac504d8bc607"
             },
             "require": {
                 "drupal/commerce": "^2.29",
@@ -2394,8 +2394,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-2.5",
-                    "datestamp": "1673941306",
+                    "version": "8.x-2.6",
+                    "datestamp": "1678443617",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5200,12 +5200,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:weeshop/weeshop_molla.git",
-                "reference": "81b9d352cd7bc0eccefac2b7c8ebf447a727728a"
+                "reference": "a7acbe1601c1af383d81b04894eb8b20a1cd6b8c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/weeshop/weeshop_molla/zipball/81b9d352cd7bc0eccefac2b7c8ebf447a727728a",
-                "reference": "81b9d352cd7bc0eccefac2b7c8ebf447a727728a",
+                "url": "https://api.github.com/repos/weeshop/weeshop_molla/zipball/a7acbe1601c1af383d81b04894eb8b20a1cd6b8c",
+                "reference": "a7acbe1601c1af383d81b04894eb8b20a1cd6b8c",
                 "shasum": ""
             },
             "default-branch": true,
@@ -5219,7 +5219,7 @@
                 "issues": "https://www.drupal.org/project/issues/weeshop_molla",
                 "source": "https://github.com/weeshop/weeshop_molla/tree/1.0.x"
             },
-            "time": "2023-03-10T06:53:43+00:00"
+            "time": "2023-03-10T07:57:01+00:00"
         },
         {
             "name": "drupal/weeshop_molla_supports",
@@ -10709,12 +10709,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/weeshop/WeeShop.git",
-                "reference": "258993a0b5f08b611e3eab2381468d9f185c47fc"
+                "reference": "f814f91dd352e270a166ac6627bac45bce472c6c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/weeshop/WeeShop/zipball/258993a0b5f08b611e3eab2381468d9f185c47fc",
-                "reference": "258993a0b5f08b611e3eab2381468d9f185c47fc",
+                "url": "https://api.github.com/repos/weeshop/WeeShop/zipball/f814f91dd352e270a166ac6627bac45bce472c6c",
+                "reference": "f814f91dd352e270a166ac6627bac45bce472c6c",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -10761,7 +10761,7 @@
                 "issues": "https://github.com/weeshop/WeeShop/issues",
                 "source": "https://github.com/weeshop/WeeShop/tree/8.x-1.x"
             },
-            "time": "2023-03-10T07:26:49+00:00"
+            "time": "2023-03-15T01:54:44+00:00"
         },
         {
             "name": "wikimedia/composer-merge-plugin",
@@ -13917,16 +13917,16 @@
         },
         {
             "name": "phpunit/phpunit",
-            "version": "9.6.4",
+            "version": "9.6.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "9125ee085b6d95e78277dc07aa1f46f9e0607b8d"
+                "reference": "86e761949019ae83f49240b2f2123fb5ab3b2fc5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/9125ee085b6d95e78277dc07aa1f46f9e0607b8d",
-                "reference": "9125ee085b6d95e78277dc07aa1f46f9e0607b8d",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/86e761949019ae83f49240b2f2123fb5ab3b2fc5",
+                "reference": "86e761949019ae83f49240b2f2123fb5ab3b2fc5",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -13965,8 +13965,8 @@
                 "sebastian/version": "^3.0.2"
             },
             "suggest": {
-                "ext-soap": "*",
-                "ext-xdebug": "*"
+                "ext-soap": "To be able to generate mocks based on WSDL files",
+                "ext-xdebug": "PHP extension that provides line coverage as well as branch and path coverage"
             },
             "bin": [
                 "phpunit"
@@ -14005,7 +14005,7 @@
             ],
             "support": {
                 "issues": "https://github.com/sebastianbergmann/phpunit/issues",
-                "source": "https://github.com/sebastianbergmann/phpunit/tree/9.6.4"
+                "source": "https://github.com/sebastianbergmann/phpunit/tree/9.6.5"
             },
             "funding": [
                 {
@@ -14021,7 +14021,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-02-27T13:06:37+00:00"
+            "time": "2023-03-09T06:34:10+00:00"
         },
         {
             "name": "react/promise",
@@ -15291,16 +15291,16 @@
         },
         {
             "name": "sirbrillig/phpcs-variable-analysis",
-            "version": "v2.11.9",
+            "version": "v2.11.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sirbrillig/phpcs-variable-analysis.git",
-                "reference": "62730888d225d55a613854b6a76fb1f9f57d1618"
+                "reference": "d8a00fb972b9317ef4decf66725a25e712cc4cbe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sirbrillig/phpcs-variable-analysis/zipball/62730888d225d55a613854b6a76fb1f9f57d1618",
-                "reference": "62730888d225d55a613854b6a76fb1f9f57d1618",
+                "url": "https://api.github.com/repos/sirbrillig/phpcs-variable-analysis/zipball/d8a00fb972b9317ef4decf66725a25e712cc4cbe",
+                "reference": "d8a00fb972b9317ef4decf66725a25e712cc4cbe",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -15314,7 +15314,7 @@
                 "squizlabs/php_codesniffer": "^3.5.6"
             },
             "require-dev": {
-                "dealerdirect/phpcodesniffer-composer-installer": "^0.7.0",
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.7 || ^1.0",
                 "phpcsstandards/phpcsdevcs": "^1.1",
                 "phpstan/phpstan": "^1.7",
                 "phpunit/phpunit": "^4.8.36 || ^5.7.21 || ^6.5 || ^7.0 || ^8.0 || ^9.0",
@@ -15351,7 +15351,7 @@
                 "source": "https://github.com/sirbrillig/phpcs-variable-analysis",
                 "wiki": "https://github.com/sirbrillig/phpcs-variable-analysis/wiki"
             },
-            "time": "2022-10-05T23:31:46+00:00"
+            "time": "2023-03-13T14:54:42+00:00"
         },
         {
             "name": "slevomat/coding-standard",
