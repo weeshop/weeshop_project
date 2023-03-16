@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9004ee2cc983d2812bebe562d4857388",
+    "content-hash": "4b3dba72da29bb299d28833d4f65c6ed",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3055,12 +3055,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/solody/enhanced_product.git",
-                "reference": "bb91d78266ef7946ee799f5dc152b433a2882f5d"
+                "reference": "c89cd3977594a65ab6bf135e17eee3deafde5d83"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/solody/enhanced_product/zipball/bb91d78266ef7946ee799f5dc152b433a2882f5d",
-                "reference": "bb91d78266ef7946ee799f5dc152b433a2882f5d",
+                "url": "https://api.github.com/repos/solody/enhanced_product/zipball/c89cd3977594a65ab6bf135e17eee3deafde5d83",
+                "reference": "c89cd3977594a65ab6bf135e17eee3deafde5d83",
                 "shasum": ""
             },
             "require": {
@@ -3080,9 +3080,43 @@
             ],
             "support": {
                 "issues": "https://www.drupal.org/project/issues/enhanced_product",
-                "source": "http://cgit.drupalcode.org/enhanced_product"
+                "source": "https://cgit.drupalcode.org/enhanced_product"
             },
-            "time": "2023-01-09T07:00:12+00:00"
+            "time": "2023-03-16T06:50:28+00:00"
+        },
+        {
+            "name": "drupal/enhanced_store",
+            "version": "1.0.x-dev",
+            "source": {
+                "type": "git",
+                "url": "git@github.com:solody/enhanced_store.git",
+                "reference": "0b549dd6c79f766bfde3f5cfae61aceb853615df"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/solody/enhanced_store/zipball/0b549dd6c79f766bfde3f5cfae61aceb853615df",
+                "reference": "0b549dd6c79f766bfde3f5cfae61aceb853615df",
+                "shasum": ""
+            },
+            "require": {
+                "drupal/commerce": "^2.0",
+                "drupal/features": "^3.8"
+            },
+            "default-branch": true,
+            "type": "drupal-module",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Provides enhanced store features for commerce store.",
+            "homepage": "https://www.drupal.org/project/enhanced_store",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "issues": "https://www.drupal.org/project/issues/enhanced_store",
+                "source": "https://cgit.drupalcode.org/enhanced_store"
+            },
+            "time": "2023-03-16T06:50:28+00:00"
         },
         {
             "name": "drupal/entity",
@@ -10487,12 +10521,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/weeshop/WeeShop.git",
-                "reference": "faf7833a263b7880682e8cfa19808dd0dcb6537d"
+                "reference": "7fcbc57fb09b18a9d8a0608fcf80488ff553200b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/weeshop/WeeShop/zipball/faf7833a263b7880682e8cfa19808dd0dcb6537d",
-                "reference": "faf7833a263b7880682e8cfa19808dd0dcb6537d",
+                "url": "https://api.github.com/repos/weeshop/WeeShop/zipball/7fcbc57fb09b18a9d8a0608fcf80488ff553200b",
+                "reference": "7fcbc57fb09b18a9d8a0608fcf80488ff553200b",
                 "shasum": ""
             },
             "require": {
@@ -10504,6 +10538,7 @@
                 "drupal/commerce_shipping": "^2.0",
                 "drupal/commerce_wishlist": "^3.0",
                 "drupal/enhanced_product": "dev-8.x-1.x",
+                "drupal/enhanced_store": "1.0.x-dev",
                 "drupal/entity_browser": "^2.6",
                 "drupal/entity_usage": "^2.0",
                 "drupal/facets": "^3.0",
@@ -10532,7 +10567,7 @@
                 "source": "https://github.com/weeshop/WeeShop/tree/8.x-1.x",
                 "issues": "https://github.com/weeshop/WeeShop/issues"
             },
-            "time": "2023-03-16T03:21:54+00:00"
+            "time": "2023-03-16T06:31:14+00:00"
         },
         {
             "name": "wikimedia/composer-merge-plugin",
