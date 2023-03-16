@@ -5,6 +5,9 @@ cd ./web/modules/contrib || exit
 rm -rf ./enhanced_product
 git clone git@github.com:solody/enhanced_product.git
 
+rm -rf ./enhanced_store
+git clone git@github.com:solody/enhanced_store.git
+
 
 rm -rf ./weeshop_demo
 git clone git@github.com:weeshop/weeshop_demo.git

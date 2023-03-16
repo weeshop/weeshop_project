@@ -14,6 +14,7 @@
             "url": "https://packages.drupal.org/8",
             "exclude": [
                 "drupal/enhanced_product",
+                "drupal/enhanced_store",
                 "weeshop/weeshop"
             ]
         },
@@ -32,6 +33,10 @@
         {
             "type": "vcs",
             "url":  "git@github.com:solody/enhanced_product.git"
+        },
+        {
+            "type": "vcs",
+            "url":  "git@github.com:solody/enhanced_store.git"
         }
     ],
     "require": {
