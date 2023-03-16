@@ -11,7 +11,15 @@
     "repositories": [
         {
             "type": "composer",
-            "url": "https://packages.drupal.org/8"
+            "url": "https://packages.drupal.org/8",
+            "exclude": [
+                "drupal/enhanced_product",
+                "weeshop/weeshop"
+            ]
+        },
+        {
+            "type": "vcs",
+            "url":  "git@github.com:weeshop/WeeShop.git"
         },
         {
             "type": "vcs",
@@ -20,6 +28,10 @@
         {
             "type": "vcs",
             "url":  "git@github.com:weeshop/weeshop_molla_supports.git"
+        },
+        {
+            "type": "vcs",
+            "url":  "git@github.com:solody/enhanced_product.git"
         }
     ],
     "require": {

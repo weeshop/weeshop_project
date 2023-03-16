@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "52ac26b2c40ed4d98b190890224c9f02",
+    "content-hash": "9004ee2cc983d2812bebe562d4857388",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2506,209 +2506,6 @@
             }
         },
         {
-            "name": "drupal/commerce_stock_enforcement",
-            "version": "1.0.0",
-            "require": {
-                "drupal/commerce_product": "*",
-                "drupal/commerce_stock": "*",
-                "drupal/core": "^8 || ^9"
-            },
-            "type": "metapackage",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-1.0",
-                    "datestamp": "1642166789",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "guy_schneerson",
-                    "homepage": "https://www.drupal.org/user/755184"
-                },
-                {
-                    "name": "iAugur",
-                    "homepage": "https://www.drupal.org/user/750068"
-                },
-                {
-                    "name": "olafkarsten",
-                    "homepage": "https://www.drupal.org/user/352745"
-                },
-                {
-                    "name": "rfay",
-                    "homepage": "https://www.drupal.org/user/30906"
-                },
-                {
-                    "name": "rszrama",
-                    "homepage": "https://www.drupal.org/user/49344"
-                }
-            ],
-            "description": "Provides a stock enforcement functionality.",
-            "homepage": "https://www.drupal.org/project/commerce_stock",
-            "support": {
-                "source": "https://git.drupalcode.org/project/commerce_stock"
-            }
-        },
-        {
-            "name": "drupal/commerce_stock_field",
-            "version": "1.0.0",
-            "require": {
-                "drupal/commerce_product": "*",
-                "drupal/commerce_stock": "*",
-                "drupal/commerce_stock_local": "*",
-                "drupal/core": "^8 || ^9"
-            },
-            "type": "metapackage",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-1.0",
-                    "datestamp": "1642166789",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "guy_schneerson",
-                    "homepage": "https://www.drupal.org/user/755184"
-                },
-                {
-                    "name": "iAugur",
-                    "homepage": "https://www.drupal.org/user/750068"
-                },
-                {
-                    "name": "olafkarsten",
-                    "homepage": "https://www.drupal.org/user/352745"
-                },
-                {
-                    "name": "rfay",
-                    "homepage": "https://www.drupal.org/user/30906"
-                },
-                {
-                    "name": "rszrama",
-                    "homepage": "https://www.drupal.org/user/49344"
-                }
-            ],
-            "description": "Provides a stock level field for Commerce Stock.",
-            "homepage": "https://www.drupal.org/project/commerce_stock",
-            "support": {
-                "source": "https://git.drupalcode.org/project/commerce_stock"
-            }
-        },
-        {
-            "name": "drupal/commerce_stock_local",
-            "version": "1.0.0",
-            "require": {
-                "drupal/commerce_stock": "*",
-                "drupal/core": "^8 || ^9"
-            },
-            "type": "metapackage",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-1.0",
-                    "datestamp": "1642166789",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "guy_schneerson",
-                    "homepage": "https://www.drupal.org/user/755184"
-                },
-                {
-                    "name": "iAugur",
-                    "homepage": "https://www.drupal.org/user/750068"
-                },
-                {
-                    "name": "olafkarsten",
-                    "homepage": "https://www.drupal.org/user/352745"
-                },
-                {
-                    "name": "rfay",
-                    "homepage": "https://www.drupal.org/user/30906"
-                },
-                {
-                    "name": "rszrama",
-                    "homepage": "https://www.drupal.org/user/49344"
-                }
-            ],
-            "description": "Provides a local database storage service for Commerce Stock.",
-            "homepage": "https://www.drupal.org/project/commerce_stock",
-            "support": {
-                "source": "https://git.drupalcode.org/project/commerce_stock"
-            }
-        },
-        {
-            "name": "drupal/commerce_stock_ui",
-            "version": "1.0.0",
-            "require": {
-                "drupal/commerce_stock": "*",
-                "drupal/core": "^8 || ^9"
-            },
-            "type": "metapackage",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-1.0",
-                    "datestamp": "1642166789",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "guy_schneerson",
-                    "homepage": "https://www.drupal.org/user/755184"
-                },
-                {
-                    "name": "iAugur",
-                    "homepage": "https://www.drupal.org/user/750068"
-                },
-                {
-                    "name": "olafkarsten",
-                    "homepage": "https://www.drupal.org/user/352745"
-                },
-                {
-                    "name": "rfay",
-                    "homepage": "https://www.drupal.org/user/30906"
-                },
-                {
-                    "name": "rszrama",
-                    "homepage": "https://www.drupal.org/user/49344"
-                }
-            ],
-            "description": "Provides forms, admin views and other user interface elements for the commerce stock module.",
-            "homepage": "https://www.drupal.org/project/commerce_stock",
-            "support": {
-                "source": "https://git.drupalcode.org/project/commerce_stock"
-            }
-        },
-        {
             "name": "drupal/commerce_store",
             "version": "2.33.0",
             "require": {
@@ -2886,16 +2683,16 @@
         },
         {
             "name": "drupal/core",
-            "version": "9.5.4",
+            "version": "9.5.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core.git",
-                "reference": "d48ad3173a39d6792e617f884fefe86c4bf41630"
+                "reference": "eae5e76a8b403cbd42b3465f567313b52d78b0dc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core/zipball/d48ad3173a39d6792e617f884fefe86c4bf41630",
-                "reference": "d48ad3173a39d6792e617f884fefe86c4bf41630",
+                "url": "https://api.github.com/repos/drupal/core/zipball/eae5e76a8b403cbd42b3465f567313b52d78b0dc",
+                "reference": "eae5e76a8b403cbd42b3465f567313b52d78b0dc",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -3053,22 +2850,22 @@
             ],
             "description": "Drupal is an open source content management platform powering millions of websites and applications.",
             "support": {
-                "source": "https://github.com/drupal/core/tree/9.5.4"
+                "source": "https://github.com/drupal/core/tree/9.5.5"
             },
-            "time": "2023-03-01T14:08:11+00:00"
+            "time": "2023-03-15T14:30:25+00:00"
         },
         {
             "name": "drupal/core-composer-scaffold",
-            "version": "9.5.4",
+            "version": "9.5.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-composer-scaffold.git",
-                "reference": "df1f779d3f94500f6cc791427aa729e0ba4b2464"
+                "reference": "c78779acff7b39fc0f29ff1edd710361c15ed87b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core-composer-scaffold/zipball/df1f779d3f94500f6cc791427aa729e0ba4b2464",
-                "reference": "df1f779d3f94500f6cc791427aa729e0ba4b2464",
+                "url": "https://api.github.com/repos/drupal/core-composer-scaffold/zipball/c78779acff7b39fc0f29ff1edd710361c15ed87b",
+                "reference": "c78779acff7b39fc0f29ff1edd710361c15ed87b",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -3109,13 +2906,13 @@
                 "drupal"
             ],
             "support": {
-                "source": "https://github.com/drupal/core-composer-scaffold/tree/9.5.4"
+                "source": "https://github.com/drupal/core-composer-scaffold/tree/9.5.5"
             },
-            "time": "2022-06-19T16:14:18+00:00"
+            "time": "2023-03-09T21:29:23+00:00"
         },
         {
             "name": "drupal/core-project-message",
-            "version": "9.5.4",
+            "version": "9.5.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-project-message.git",
@@ -3156,22 +2953,22 @@
                 "drupal"
             ],
             "support": {
-                "source": "https://github.com/drupal/core-project-message/tree/9.5.4"
+                "source": "https://github.com/drupal/core-project-message/tree/9.5.5"
             },
             "time": "2022-02-24T17:40:53+00:00"
         },
         {
             "name": "drupal/core-recommended",
-            "version": "9.5.4",
+            "version": "9.5.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-recommended.git",
-                "reference": "0198a05229b7560caf1bdb7dcf59b1d50c9b9b7b"
+                "reference": "3c1d205349407e706cc89f56aa34448742fe81b4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/0198a05229b7560caf1bdb7dcf59b1d50c9b9b7b",
-                "reference": "0198a05229b7560caf1bdb7dcf59b1d50c9b9b7b",
+                "url": "https://api.github.com/repos/drupal/core-recommended/zipball/3c1d205349407e706cc89f56aa34448742fe81b4",
+                "reference": "3c1d205349407e706cc89f56aa34448742fe81b4",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -3186,7 +2983,7 @@
                 "doctrine/annotations": "~1.13.3",
                 "doctrine/lexer": "~1.2.3",
                 "doctrine/reflection": "~1.2.3",
-                "drupal/core": "9.5.4",
+                "drupal/core": "9.5.5",
                 "egulias/email-validator": "~3.2.1",
                 "guzzlehttp/guzzle": "~6.5.8",
                 "guzzlehttp/promises": "~1.5.2",
@@ -3248,57 +3045,33 @@
             ],
             "description": "Core and its dependencies with known-compatible minor versions. Require this project INSTEAD OF drupal/core.",
             "support": {
-                "source": "https://github.com/drupal/core-recommended/tree/9.5.4"
+                "source": "https://github.com/drupal/core-recommended/tree/9.5.5"
             },
-            "time": "2023-03-01T14:08:11+00:00"
+            "time": "2023-03-15T14:30:25+00:00"
         },
         {
             "name": "drupal/enhanced_product",
-            "version": "1.0.0-beta2",
+            "version": "dev-8.x-1.x",
             "source": {
                 "type": "git",
-                "url": "https://git.drupalcode.org/project/enhanced_product.git",
-                "reference": "8.x-1.0-beta2"
+                "url": "https://github.com/solody/enhanced_product.git",
+                "reference": "bb91d78266ef7946ee799f5dc152b433a2882f5d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/enhanced_product-8.x-1.0-beta2.zip",
-                "reference": "8.x-1.0-beta2",
-                "shasum": "668d6bd810c675fb61d5223d37e0ece4526feb37"
+                "url": "https://api.github.com/repos/solody/enhanced_product/zipball/bb91d78266ef7946ee799f5dc152b433a2882f5d",
+                "reference": "bb91d78266ef7946ee799f5dc152b433a2882f5d",
+                "shasum": ""
             },
             "require": {
-                "drupal/commerce": "*",
-                "drupal/commerce_price": "*",
-                "drupal/commerce_product": "*",
                 "drupal/commerce_stock": "^1.0",
-                "drupal/commerce_stock_enforcement": "*",
-                "drupal/commerce_stock_field": "*",
-                "drupal/commerce_stock_local": "*",
-                "drupal/commerce_stock_ui": "*",
-                "drupal/core": "^8.8 || ^9",
                 "drupal/features": "^3.8",
                 "drupal/readonly_field_widget": "^1.0"
             },
+            "default-branch": true,
             "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-1.0-beta2",
-                    "datestamp": "1628667640",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
                 "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "司南",
-                    "homepage": "https://www.drupal.org/user/2840367"
-                }
             ],
             "description": "Provides enhanced product features for commerce product.",
             "homepage": "https://www.drupal.org/project/enhanced_product",
@@ -3306,9 +3079,10 @@
                 "Drupal"
             ],
             "support": {
-                "source": "http://cgit.drupalcode.org/enhanced_product",
-                "issues": "https://www.drupal.org/project/issues/enhanced_product"
-            }
+                "issues": "https://www.drupal.org/project/issues/enhanced_product",
+                "source": "http://cgit.drupalcode.org/enhanced_product"
+            },
+            "time": "2023-01-09T07:00:12+00:00"
         },
         {
             "name": "drupal/entity",
@@ -3604,39 +3378,43 @@
         },
         {
             "name": "drupal/facets",
-            "version": "1.8.0",
+            "version": "3.0.0-beta1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/facets.git",
-                "reference": "8.x-1.8"
+                "reference": "3.0.0-beta1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/facets-8.x-1.8.zip",
-                "reference": "8.x-1.8",
-                "shasum": "f621b84b59c5315db14a0529df5dfc74ca5bc9de"
+                "url": "https://ftp.drupal.org/files/projects/facets-3.0.0-beta1.zip",
+                "reference": "3.0.0-beta1",
+                "shasum": "788ab7515e2e6aabd0e34c1ce54c29648c738b45"
             },
             "require": {
-                "drupal/core": "^8.8 || ^9"
+                "drupal/core": "^9.3 || ^10.0"
             },
             "conflict": {
                 "drupal/search_api": "<1.14"
             },
             "require-dev": {
-                "drupal/search_api": "~1.14"
+                "drupal/jquery_ui_slider": "~2.0",
+                "drupal/jquery_ui_touch_punch": "~1.1",
+                "drupal/search_api": "^1.28||1.x-dev"
+            },
+            "suggest": {
+                "drupal/better_exposed_filters": "Required for AJAX support for facets rendered as views exposed filters",
+                "drupal/jquery_ui_slider": "Required for the 'Facets Range Widget' module to work",
+                "drupal/jquery_ui_touch_punch": "Required for the 'Facets Range Widget' module to work"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.8",
-                    "datestamp": "1620838256",
+                    "version": "3.0.0-beta1",
+                    "datestamp": "1671208547",
                     "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
+                        "status": "not-covered",
+                        "message": "Beta releases are not covered by Drupal security advisories."
                     }
-                },
-                "branch-alias": {
-                    "dev-8.x-1.x": "1.x-dev"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -10709,19 +10487,13 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/weeshop/WeeShop.git",
-                "reference": "f814f91dd352e270a166ac6627bac45bce472c6c"
+                "reference": "faf7833a263b7880682e8cfa19808dd0dcb6537d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/weeshop/WeeShop/zipball/f814f91dd352e270a166ac6627bac45bce472c6c",
-                "reference": "f814f91dd352e270a166ac6627bac45bce472c6c",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
+                "url": "https://api.github.com/repos/weeshop/WeeShop/zipball/faf7833a263b7880682e8cfa19808dd0dcb6537d",
+                "reference": "faf7833a263b7880682e8cfa19808dd0dcb6537d",
+                "shasum": ""
             },
             "require": {
                 "drupal/admin_toolbar": "^3.0",
@@ -10731,10 +10503,10 @@
                 "drupal/commerce_currency_resolver": "^1.0",
                 "drupal/commerce_shipping": "^2.0",
                 "drupal/commerce_wishlist": "^3.0",
-                "drupal/enhanced_product": "^1.0",
+                "drupal/enhanced_product": "dev-8.x-1.x",
                 "drupal/entity_browser": "^2.6",
                 "drupal/entity_usage": "^2.0",
-                "drupal/facets": "^1.0",
+                "drupal/facets": "^3.0",
                 "drupal/features": "^3.12",
                 "drupal/geysir": "^1.3",
                 "drupal/paragraphs": "^1.12",
@@ -10751,17 +10523,16 @@
             },
             "default-branch": true,
             "type": "drupal-profile",
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL-2.0+"
             ],
             "description": "WeeShop 2.x installation profile",
             "homepage": "https://www.drupal.org/project/weeshop",
             "support": {
-                "issues": "https://github.com/weeshop/WeeShop/issues",
-                "source": "https://github.com/weeshop/WeeShop/tree/8.x-1.x"
+                "source": "https://github.com/weeshop/WeeShop/tree/8.x-1.x",
+                "issues": "https://github.com/weeshop/WeeShop/issues"
             },
-            "time": "2023-03-15T01:54:44+00:00"
+            "time": "2023-03-16T03:21:54+00:00"
         },
         {
             "name": "wikimedia/composer-merge-plugin",
@@ -11982,7 +11753,7 @@
         },
         {
             "name": "drupal/core-dev",
-            "version": "9.5.4",
+            "version": "9.5.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-dev.git",
@@ -12032,7 +11803,7 @@
             ],
             "description": "require-dev dependencies from drupal/drupal; use in addition to drupal/core-recommended to run tests from drupal/core.",
             "support": {
-                "source": "https://github.com/drupal/core-dev/tree/9.5.4"
+                "source": "https://github.com/drupal/core-dev/tree/9.5.5"
             },
             "time": "2022-07-27T00:23:55+00:00"
         },
