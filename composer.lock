@@ -3055,18 +3055,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/solody/enhanced_product.git",
-                "reference": "c89cd3977594a65ab6bf135e17eee3deafde5d83"
+                "reference": "802ede4a03c60961939d41159ad1dadec2b30a15"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/solody/enhanced_product/zipball/c89cd3977594a65ab6bf135e17eee3deafde5d83",
-                "reference": "c89cd3977594a65ab6bf135e17eee3deafde5d83",
+                "url": "https://api.github.com/repos/solody/enhanced_product/zipball/802ede4a03c60961939d41159ad1dadec2b30a15",
+                "reference": "802ede4a03c60961939d41159ad1dadec2b30a15",
                 "shasum": ""
             },
             "require": {
                 "drupal/commerce_stock": "^1.0",
                 "drupal/features": "^3.8",
-                "drupal/readonly_field_widget": "^1.0"
+                "drupal/readonly_field_widget": "^1.0",
+                "drupal/svg_image": "^3.0"
             },
             "default-branch": true,
             "type": "drupal-module",
@@ -3082,7 +3083,7 @@
                 "issues": "https://www.drupal.org/project/issues/enhanced_product",
                 "source": "https://cgit.drupalcode.org/enhanced_product"
             },
-            "time": "2023-03-16T06:50:28+00:00"
+            "time": "2023-03-16T07:19:57+00:00"
         },
         {
             "name": "drupal/enhanced_store",
@@ -4656,6 +4657,57 @@
             }
         },
         {
+            "name": "drupal/svg_image",
+            "version": "3.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/svg_image.git",
+                "reference": "3.0.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/svg_image-3.0.1.zip",
+                "reference": "3.0.1",
+                "shasum": "6e0f1f305e0db535257780e647f6163cfdda8263"
+            },
+            "require": {
+                "drupal/core": "^9.3 || ^10",
+                "enshrined/svg-sanitize": ">=0.15 <1.0"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "3.0.1",
+                    "datestamp": "1676292042",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Yaroslav Lushnikov",
+                    "homepage": "https://www.drupal.org/user/2870933",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "See contributors",
+                    "homepage": "https://www.drupal.org/node/2887125/committers"
+                }
+            ],
+            "description": "Overrides the standard image formatter and widget to support SVG files.",
+            "homepage": "http://drupal.org/project/svg_image",
+            "support": {
+                "source": "http://cgit.drupalcode.org/svg_image",
+                "issues": "http://drupal.org/project/svg_image"
+            }
+        },
+        {
             "name": "drupal/swiftmailer",
             "version": "2.4.0",
             "source": {
@@ -5355,6 +5407,57 @@
                 "source": "https://github.com/enlightn/security-checker/tree/v1.10.0"
             },
             "time": "2022-02-21T22:40:16+00:00"
+        },
+        {
+            "name": "enshrined/svg-sanitize",
+            "version": "0.15.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/darylldoyle/svg-sanitizer.git",
+                "reference": "e50b83a2f1f296ca61394fe88fbfe3e896a84cf4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/darylldoyle/svg-sanitizer/zipball/e50b83a2f1f296ca61394fe88fbfe3e896a84cf4",
+                "reference": "e50b83a2f1f296ca61394fe88fbfe3e896a84cf4",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "ext-dom": "*",
+                "ext-libxml": "*",
+                "php": "^7.0 || ^8.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^6.5 || ^8.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "enshrined\\svgSanitize\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Daryll Doyle",
+                    "email": "daryll@enshrined.co.uk"
+                }
+            ],
+            "description": "An SVG sanitizer for PHP",
+            "support": {
+                "issues": "https://github.com/darylldoyle/svg-sanitizer/issues",
+                "source": "https://github.com/darylldoyle/svg-sanitizer/tree/0.15.4"
+            },
+            "time": "2022-02-21T09:13:59+00:00"
         },
         {
             "name": "grasmash/expander",
