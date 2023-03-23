@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4b3dba72da29bb299d28833d4f65c6ed",
+    "content-hash": "0478fb0fd3c2f2a05e18d7c294f450f5",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1880,45 +1880,27 @@
         },
         {
             "name": "drupal/adverts",
-            "version": "dev-1.x",
+            "version": "dev-8.x-1.x",
             "source": {
                 "type": "git",
-                "url": "https://git.drupalcode.org/project/adverts.git",
+                "url": "https://github.com/solody/adverts.git",
                 "reference": "836ca8182b00747ce3963f227ecbb3d3ae5ebeb2"
             },
-            "require": {
-                "drupal/core": "^8.9 || ^9"
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/solody/adverts/zipball/836ca8182b00747ce3963f227ecbb3d3ae5ebeb2",
+                "reference": "836ca8182b00747ce3963f227ecbb3d3ae5ebeb2",
+                "shasum": ""
             },
+            "default-branch": true,
             "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.0-beta1+0-dev",
-                    "datestamp": "1576153380",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "司南",
-                    "homepage": "https://www.drupal.org/user/2840367"
-                }
-            ],
             "description": "Provides adverts content management.",
             "homepage": "https://www.drupal.org/project/adverts",
             "support": {
-                "source": "https://git.drupalcode.org/project/adverts",
-                "issues": "https://www.drupal.org/project/issues/adverts"
-            }
+                "issues": "https://www.drupal.org/project/issues/adverts",
+                "source": "https://git.drupalcode.org/project/adverts"
+            },
+            "time": "2021-11-23T06:14:00+00:00"
         },
         {
             "name": "drupal/commerce",
@@ -3896,11 +3878,17 @@
         },
         {
             "name": "drupal/migrate_manifest",
-            "version": "dev-3.x",
+            "version": "3.0.2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/migrate_manifest.git",
-                "reference": "4305d5506c333ac61aa81c44eff5267a5926c612"
+                "reference": "3.0.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/migrate_manifest-3.0.2.zip",
+                "reference": "3.0.2",
+                "shasum": "05e9daabfe100caf6c0977a5a81fcfaec3d37bb7"
             },
             "require": {
                 "drupal/core": "^9.1"
@@ -3910,15 +3898,12 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-3.x": "3.x-dev"
-                },
                 "drupal": {
-                    "version": "3.x-dev",
-                    "datestamp": "1616609382",
+                    "version": "3.0.2",
+                    "datestamp": "1627500287",
                     "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Dev releases are not covered by Drupal security advisories."
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
                     }
                 },
                 "drush": {
@@ -3949,70 +3934,6 @@
                 "source": "https://cgit.drupalcode.org/migrate_manifest",
                 "issues": "https://www.drupal.org/project/issues/migrate_manifest",
                 "irc": "irc://irc.freenode.org/drupal-migrate"
-            }
-        },
-        {
-            "name": "drupal/migrate_plus",
-            "version": "5.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/migrate_plus.git",
-                "reference": "8.x-5.3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/migrate_plus-8.x-5.3.zip",
-                "reference": "8.x-5.3",
-                "shasum": "3cf6dde235d7604ee49be2986812c0ee5e2982f6"
-            },
-            "require": {
-                "drupal/core": "^9.1"
-            },
-            "require-dev": {
-                "drupal/migrate_example_advanced_setup": "*",
-                "drupal/migrate_example_setup": "*"
-            },
-            "suggest": {
-                "ext-soap": "*",
-                "sainsburys/guzzle-oauth2-plugin": "3.0 required for the OAuth2 authentication plugin"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-5.3",
-                    "datestamp": "1650658156",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Mike Ryan",
-                    "homepage": "https://www.drupal.org/u/mikeryan",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "Lucas Hedding",
-                    "homepage": "https://www.drupal.org/u/heddn",
-                    "role": "Maintainer"
-                },
-                {
-                    "name": "mikeryan",
-                    "homepage": "https://www.drupal.org/user/4420"
-                }
-            ],
-            "description": "Enhancements to core migration support.",
-            "homepage": "https://www.drupal.org/project/migrate_plus",
-            "support": {
-                "source": "https://git.drupalcode.org/project/migrate_plus",
-                "issues": "https://www.drupal.org/project/issues/migrate_plus",
-                "slack": "#migrate"
             }
         },
         {
@@ -4068,35 +3989,36 @@
         },
         {
             "name": "drupal/migrate_tools",
-            "version": "5.2.0",
+            "version": "6.0.1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/migrate_tools.git",
-                "reference": "8.x-5.2"
+                "reference": "6.0.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/migrate_tools-8.x-5.2.zip",
-                "reference": "8.x-5.2",
-                "shasum": "e473c32780c567b62b3aa7dd92c2fb5227b9ee12"
+                "url": "https://ftp.drupal.org/files/projects/migrate_tools-6.0.1.zip",
+                "reference": "6.0.1",
+                "shasum": "8c07d1b61b319acd4fd395e22ef9bf34d23299ba"
             },
             "require": {
-                "drupal/core": "^9.1",
-                "drupal/migrate_plus": "^5",
-                "php": ">=7.1"
+                "drupal/core": ">=9.1",
+                "php": ">=7.4"
             },
             "require-dev": {
-                "drupal/migrate_source_csv": "^3.0",
-                "drush/drush": "^10"
+                "drupal/migrate_plus": ">=5",
+                "drupal/migrate_source_csv": ">=3",
+                "drush/drush": ">=11"
             },
             "suggest": {
-                "drush/drush": "^9 || ^10"
+                "drupal/migrate_plus": ">=5",
+                "drush/drush": ">=11"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-5.2",
-                    "datestamp": "1672425094",
+                    "version": "6.0.1",
+                    "datestamp": "1672424943",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4104,7 +4026,7 @@
                 },
                 "drush": {
                     "services": {
-                        "drush.services.yml": "^9 || ^10"
+                        "drush.services.yml": ">=9"
                     }
                 }
             },
@@ -4278,47 +4200,36 @@
         },
         {
             "name": "drupal/product_adverts",
-            "version": "dev-1.x",
+            "version": "dev-8.x-1.x",
             "source": {
                 "type": "git",
-                "url": "https://git.drupalcode.org/project/product_adverts.git",
-                "reference": "3a745ceb53c4de44f92031fd4fe65d8d75eeca79"
+                "url": "https://github.com/solody/product_adverts.git",
+                "reference": "f9fa6e8a668d91e8752c0812facab739406ad0b5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/solody/product_adverts/zipball/f9fa6e8a668d91e8752c0812facab739406ad0b5",
+                "reference": "f9fa6e8a668d91e8752c0812facab739406ad0b5",
+                "shasum": ""
             },
             "require": {
-                "drupal/adverts": "*",
-                "drupal/commerce_product": "*",
-                "drupal/core": "^8.9 || ^9"
+                "drupal/adverts": "8.x-1.x-dev"
             },
+            "default-branch": true,
             "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.0-beta3+3-dev",
-                    "datestamp": "1637655916",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "司南",
-                    "homepage": "https://www.drupal.org/user/2840367"
-                }
+                "GPL-2.0+"
             ],
             "description": "My Awesome Module",
             "homepage": "https://www.drupal.org/project/product_adverts",
+            "keywords": [
+                "Drupal"
+            ],
             "support": {
-                "source": "https://git.drupalcode.org/project/product_adverts",
-                "error": "require.drupal/adverts : invalid version constraint (Could not parse version constraint ^8.x-1.x-dev: Invalid version string \"^8.x-1.x-dev\")"
-            }
+                "issues": "https://www.drupal.org/project/issues/product_adverts",
+                "source": "https://git.drupalcode.org/project/product_adverts"
+            },
+            "time": "2023-03-23T03:15:00+00:00"
         },
         {
             "name": "drupal/profile",
@@ -4926,136 +4837,98 @@
         },
         {
             "name": "drupal/weeshop_alpha",
-            "version": "dev-1.x",
+            "version": "dev-8.x-1.x",
             "source": {
                 "type": "git",
-                "url": "https://git.drupalcode.org/project/weeshop_alpha.git",
-                "reference": "6d2e2029907fd2dbe98a6c8a892648d3c06ad112"
+                "url": "https://github.com/weeshop/weeshop_alpha.git",
+                "reference": "1b801b9a877bb3c8657b1bbb1c46fc3613b6c443"
             },
-            "require": {
-                "drupal/core": "^8.9 || ^9"
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/weeshop/weeshop_alpha/zipball/1b801b9a877bb3c8657b1bbb1c46fc3613b6c443",
+                "reference": "1b801b9a877bb3c8657b1bbb1c46fc3613b6c443",
+                "shasum": ""
             },
+            "default-branch": true,
             "type": "drupal-theme",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.0-beta4+3-dev",
-                    "datestamp": "1637648086",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
             "license": [
                 "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "司南",
-                    "homepage": "https://www.drupal.org/user/2840367"
-                }
             ],
             "description": "Front end theme for WeeShop.",
             "homepage": "https://www.drupal.org/project/weeshop_alpha",
             "support": {
-                "source": "https://git.drupalcode.org/project/weeshop_alpha",
-                "issues": "https://www.drupal.org/project/issues/weeshop_alpha"
-            }
+                "issues": "https://www.drupal.org/project/issues/weeshop_alpha",
+                "source": "https://github.com/weeshop/weeshop_alpha/tree/8.x-1.x"
+            },
+            "time": "2023-03-10T07:57:01+00:00"
         },
         {
             "name": "drupal/weeshop_alpha_components",
-            "version": "dev-1.x",
+            "version": "dev-8.x-1.x",
             "source": {
                 "type": "git",
-                "url": "https://git.drupalcode.org/project/weeshop_alpha_components.git",
+                "url": "https://github.com/weeshop/weeshop_alpha_components.git",
                 "reference": "4bf6450f8a04d451dfe5ed40c0e4465c970cd326"
             },
-            "require": {
-                "drupal/core": "^8.9 || ^9",
-                "drupal/enhanced_product": "*"
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/weeshop/weeshop_alpha_components/zipball/4bf6450f8a04d451dfe5ed40c0e4465c970cd326",
+                "reference": "4bf6450f8a04d451dfe5ed40c0e4465c970cd326",
+                "shasum": ""
             },
+            "default-branch": true,
             "type": "drupal-module",
-            "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.0-beta1+1-dev",
-                    "datestamp": "1637648377",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "司南",
-                    "homepage": "https://www.drupal.org/user/2840367"
-                }
-            ],
             "description": "Provides components for WeeShop Alpha theme support purpose.",
             "homepage": "https://www.drupal.org/project/weeshop_alpha_components",
             "support": {
-                "source": "https://git.drupalcode.org/project/weeshop_alpha_components",
-                "issues": "https://www.drupal.org/project/issues/weeshop_alpha_components"
-            }
+                "issues": "https://www.drupal.org/project/issues/weeshop_alpha_components",
+                "source": "https://git.drupalcode.org/project/weeshop_alpha_components"
+            },
+            "time": "2021-11-23T06:14:00+00:00"
         },
         {
             "name": "drupal/weeshop_demo",
-            "version": "dev-1.x",
+            "version": "2.0.x-dev",
             "source": {
                 "type": "git",
-                "url": "https://git.drupalcode.org/project/weeshop_demo.git",
-                "reference": "3b566518d08f05e5b5bf0163a8a22e176e1f3d6a"
+                "url": "https://github.com/weeshop/weeshop_demo.git",
+                "reference": "f26f3a140304f704a6e6cf53fb064450a000fe7f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/weeshop/weeshop_demo/zipball/f26f3a140304f704a6e6cf53fb064450a000fe7f",
+                "reference": "f26f3a140304f704a6e6cf53fb064450a000fe7f",
+                "shasum": ""
             },
             "require": {
-                "drupal/core": "^8.9 || ^9",
                 "drupal/migrate_file": "^2.0",
                 "drupal/migrate_inline_image": "^1.0-beta3",
-                "drupal/migrate_manifest": "3.x-dev",
+                "drupal/migrate_manifest": "^3.0",
                 "drupal/migrate_source_csv": "^3.4",
-                "drupal/migrate_tools": "^5.0"
+                "drupal/migrate_tools": "^6.0"
             },
+            "require-dev": {
+                "drush/drush": "^11"
+            },
+            "suggest": {
+                "drush/drush": "^11"
+            },
+            "default-branch": true,
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-1.x": "1.x-dev"
-                },
-                "drupal": {
-                    "version": "8.x-1.0-beta1+2-dev",
-                    "datestamp": "1637672928",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
+                "drush": {
+                    "services": {
+                        "drush.services.yml": "^9 || ^10 || ^11"
                     }
                 }
             },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "司南",
-                    "homepage": "https://www.drupal.org/user/2840367"
-                }
-            ],
-            "description": "WeeShop Demo data provider.",
+            "description": "WeeShop Demo datas provider.",
             "homepage": "https://www.drupal.org/project/weeshop_demo",
             "support": {
-                "source": "https://git.drupalcode.org/project/weeshop_demo",
-                "error": "Invalid dependency: \"weeshop_product_tpye_clothes\" is an unknown drupal 8 package name",
-                "issues": "https://www.drupal.org/project/issues/weeshop_demo"
-            }
+                "issues": "https://www.drupal.org/project/issues/weeshop_demo",
+                "source": "https://cgit.drupalcode.org/weeshop_demo"
+            },
+            "time": "2023-03-23T03:57:17+00:00"
         },
         {
             "name": "drupal/weeshop_molla",
@@ -5090,12 +4963,12 @@
             "source": {
                 "type": "git",
                 "url": "git@github.com:weeshop/weeshop_molla_supports.git",
-                "reference": "156c7f6aeb74c14a570fe0f2ffd0bd326252d276"
+                "reference": "7516c421b0e5ecad1318920d86bdf5c762d6381c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/weeshop/weeshop_molla_supports/zipball/156c7f6aeb74c14a570fe0f2ffd0bd326252d276",
-                "reference": "156c7f6aeb74c14a570fe0f2ffd0bd326252d276",
+                "url": "https://api.github.com/repos/weeshop/weeshop_molla_supports/zipball/7516c421b0e5ecad1318920d86bdf5c762d6381c",
+                "reference": "7516c421b0e5ecad1318920d86bdf5c762d6381c",
                 "shasum": ""
             },
             "require": {
@@ -5109,7 +4982,7 @@
                 "issues": "https://www.drupal.org/project/issues/weeshop_molla_supports",
                 "source": "https://git.drupalcode.org/project/weeshop_molla_supports"
             },
-            "time": "2023-03-10T06:53:43+00:00"
+            "time": "2023-03-21T09:16:56+00:00"
         },
         {
             "name": "drush/drush",
@@ -7142,16 +7015,16 @@
         },
         {
             "name": "psy/psysh",
-            "version": "v0.11.11",
+            "version": "v0.11.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/bobthecow/psysh.git",
-                "reference": "ba67f2d26278ec9266a5cfe0acba33a8ca1277ae"
+                "reference": "722317c9f5627e588788e340f29b923e58f92f54"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/ba67f2d26278ec9266a5cfe0acba33a8ca1277ae",
-                "reference": "ba67f2d26278ec9266a5cfe0acba33a8ca1277ae",
+                "url": "https://api.github.com/repos/bobthecow/psysh/zipball/722317c9f5627e588788e340f29b923e58f92f54",
+                "reference": "722317c9f5627e588788e340f29b923e58f92f54",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -7218,9 +7091,9 @@
             ],
             "support": {
                 "issues": "https://github.com/bobthecow/psysh/issues",
-                "source": "https://github.com/bobthecow/psysh/tree/v0.11.11"
+                "source": "https://github.com/bobthecow/psysh/tree/v0.11.13"
             },
-            "time": "2023-01-23T16:14:59+00:00"
+            "time": "2023-03-21T14:22:44+00:00"
         },
         {
             "name": "ralouphie/getallheaders",
@@ -10691,12 +10564,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/weeshop/WeeShop.git",
-                "reference": "f2fe36553a622946e4b47fc1ac0abc078e4474e2"
+                "reference": "561044c56bb1039eac4cdae4eb68f8570204ab1a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/weeshop/WeeShop/zipball/f2fe36553a622946e4b47fc1ac0abc078e4474e2",
-                "reference": "f2fe36553a622946e4b47fc1ac0abc078e4474e2",
+                "url": "https://api.github.com/repos/weeshop/WeeShop/zipball/561044c56bb1039eac4cdae4eb68f8570204ab1a",
+                "reference": "561044c56bb1039eac4cdae4eb68f8570204ab1a",
                 "shasum": ""
             },
             "require": {
@@ -10715,14 +10588,14 @@
                 "drupal/features": "^3.12",
                 "drupal/geysir": "^1.3",
                 "drupal/paragraphs": "^1.12",
-                "drupal/product_adverts": "1.x-dev",
+                "drupal/product_adverts": "dev-8.x-1.x",
                 "drupal/search_api": "^1.0",
                 "drupal/search_api_autocomplete": "^1.0",
                 "drupal/swiftmailer": "^2.0",
                 "drupal/tb_megamenu": "^2.0",
-                "drupal/weeshop_alpha": "1.x-dev",
-                "drupal/weeshop_alpha_components": "1.x-dev",
-                "drupal/weeshop_demo": "1.x-dev",
+                "drupal/weeshop_alpha": "dev-8.x-1.x",
+                "drupal/weeshop_alpha_components": "dev-8.x-1.x",
+                "drupal/weeshop_demo": "2.0.x-dev",
                 "drupal/weeshop_molla": "1.0.x-dev",
                 "drupal/weeshop_molla_supports": "1.0.x-dev"
             },
@@ -10737,7 +10610,7 @@
                 "source": "https://github.com/weeshop/WeeShop/tree/8.x-1.x",
                 "issues": "https://github.com/weeshop/WeeShop/issues"
             },
-            "time": "2023-03-21T07:42:11+00:00"
+            "time": "2023-03-23T04:13:26+00:00"
         },
         {
             "name": "wikimedia/composer-merge-plugin",
@@ -11028,16 +10901,16 @@
         },
         {
             "name": "composer/composer",
-            "version": "2.2.20",
+            "version": "2.2.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/composer.git",
-                "reference": "b4850827d87688465fc3b775c71b2836187538ac"
+                "reference": "978198befc71de0b18fc1fc5a472c03b184b504a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/composer/zipball/b4850827d87688465fc3b775c71b2836187538ac",
-                "reference": "b4850827d87688465fc3b775c71b2836187538ac",
+                "url": "https://api.github.com/repos/composer/composer/zipball/978198befc71de0b18fc1fc5a472c03b184b504a",
+                "reference": "978198befc71de0b18fc1fc5a472c03b184b504a",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -11113,7 +10986,7 @@
             "support": {
                 "irc": "ircs://irc.libera.chat:6697/composer",
                 "issues": "https://github.com/composer/composer/issues",
-                "source": "https://github.com/composer/composer/tree/2.2.20"
+                "source": "https://github.com/composer/composer/tree/2.2.21"
             },
             "funding": [
                 {
@@ -11129,7 +11002,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2023-02-10T13:11:10+00:00"
+            "time": "2023-02-15T12:07:40+00:00"
         },
         {
             "name": "composer/metadata-minifier",
@@ -12081,34 +11954,31 @@
         },
         {
             "name": "drupal/devel_entity_updates",
-            "version": "3.0.1",
+            "version": "4.1.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/devel_entity_updates.git",
-                "reference": "3.0.1"
+                "reference": "4.1.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/devel_entity_updates-3.0.1.zip",
-                "reference": "3.0.1",
-                "shasum": "ed7f7b410659538b4ccf898933ef413f75382896"
+                "url": "https://ftp.drupal.org/files/projects/devel_entity_updates-4.1.0.zip",
+                "reference": "4.1.0",
+                "shasum": "06159bf4ed26832eeeb2625297476bbc1188cbde"
             },
             "require": {
-                "drupal/core": "^8.7.7 || ^9",
-                "drupal/devel": "*"
-            },
-            "conflict": {
-                "drupal/core": "<8.7",
-                "drush/drush": ">=9.0 <9.6"
+                "drupal/core": "^9.2 || ^10",
+                "drupal/devel": "*",
+                "drush/drush": "^11"
             },
             "require-dev": {
-                "drupal/devel": "^2 || ^3"
+                "drupal/devel": "*"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.0.1",
-                    "datestamp": "1614938245",
+                    "version": "4.1.0",
+                    "datestamp": "1671814425",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -12116,7 +11986,7 @@
                 },
                 "drush": {
                     "services": {
-                        "drush.services.yml": "^9 || ^10"
+                        "drush.services.yml": "^11"
                     }
                 }
             },
