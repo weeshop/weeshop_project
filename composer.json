@@ -22,8 +22,13 @@
                 "drupal/weeshop_alpha_components",
                 "drupal/weeshop_alpha",
                 "drupal/weeshop_molla",
-                "drupal/weeshop_molla_supports"
+                "drupal/weeshop_molla_supports",
+                "drupal/migrate_inline_image"
             ]
+        },
+        {
+            "type": "vcs",
+            "url":  "git@github.com:solody/migrate_inline_image.git"
         },
         {
             "type": "vcs",

@@ -5,6 +5,9 @@ cp -r ./script/config ./web/modules/contrib/facets/modules/facets_rest
 
 cd ./web/modules/contrib || exit
 
+rm -rf ./migrate_inline_image
+git clone git@github.com:solody/migrate_inline_image.git
+
 rm -rf ./product_adverts
 git clone git@github.com:solody/product_adverts.git
 
