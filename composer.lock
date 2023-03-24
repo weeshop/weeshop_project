@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0478fb0fd3c2f2a05e18d7c294f450f5",
+    "content-hash": "f57c7697a0f39cee8c9ab814341e1949",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1884,12 +1884,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/solody/adverts.git",
-                "reference": "836ca8182b00747ce3963f227ecbb3d3ae5ebeb2"
+                "reference": "faae0af9a65374b61e2cc0754726468c26ad41fc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/solody/adverts/zipball/836ca8182b00747ce3963f227ecbb3d3ae5ebeb2",
-                "reference": "836ca8182b00747ce3963f227ecbb3d3ae5ebeb2",
+                "url": "https://api.github.com/repos/solody/adverts/zipball/faae0af9a65374b61e2cc0754726468c26ad41fc",
+                "reference": "faae0af9a65374b61e2cc0754726468c26ad41fc",
                 "shasum": ""
             },
             "default-branch": true,
@@ -1900,7 +1900,7 @@
                 "issues": "https://www.drupal.org/project/issues/adverts",
                 "source": "https://git.drupalcode.org/project/adverts"
             },
-            "time": "2021-11-23T06:14:00+00:00"
+            "time": "2023-03-24T06:58:38+00:00"
         },
         {
             "name": "drupal/commerce",
@@ -3832,49 +3832,31 @@
         },
         {
             "name": "drupal/migrate_inline_image",
-            "version": "1.0.0-beta3",
+            "version": "dev-8.x-1.x",
             "source": {
                 "type": "git",
-                "url": "https://git.drupalcode.org/project/migrate_inline_image.git",
-                "reference": "8.x-1.0-beta3"
+                "url": "https://github.com/solody/migrate_inline_image.git",
+                "reference": "30ad896de3684fe83d097daf0a0cf84e625555fc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/migrate_inline_image-8.x-1.0-beta3.zip",
-                "reference": "8.x-1.0-beta3",
-                "shasum": "cfec05edd818b870f86e3ec289dfe31981423cac"
+                "url": "https://api.github.com/repos/solody/migrate_inline_image/zipball/30ad896de3684fe83d097daf0a0cf84e625555fc",
+                "reference": "30ad896de3684fe83d097daf0a0cf84e625555fc",
+                "shasum": ""
             },
             "require": {
-                "drupal/core": "^8.8 || ^9",
-                "drupal/migrate_file": "^2.0"
+                "drupal/migrate_file": "^2.0",
+                "symfony/dom-crawler": "^4.0"
             },
+            "default-branch": true,
             "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "8.x-1.0-beta3",
-                    "datestamp": "1616679216",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/8/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "司南",
-                    "homepage": "https://www.drupal.org/user/2840367"
-                }
-            ],
             "description": "Migrate inline images for the rich-text field.",
             "homepage": "https://www.drupal.org/project/migrate_inline_image",
             "support": {
-                "source": "http://cgit.drupalcode.org/migrate_inline_image",
-                "issues": "https://www.drupal.org/project/issues/migrate_inline_image"
-            }
+                "issues": "https://www.drupal.org/project/issues/migrate_inline_image",
+                "source": "http://cgit.drupalcode.org/migrate_inline_image"
+            },
+            "time": "2023-03-24T07:17:30+00:00"
         },
         {
             "name": "drupal/migrate_manifest",
@@ -3934,6 +3916,71 @@
                 "source": "https://cgit.drupalcode.org/migrate_manifest",
                 "issues": "https://www.drupal.org/project/issues/migrate_manifest",
                 "irc": "irc://irc.freenode.org/drupal-migrate"
+            }
+        },
+        {
+            "name": "drupal/migrate_plus",
+            "version": "6.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/migrate_plus.git",
+                "reference": "6.0.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/migrate_plus-6.0.1.zip",
+                "reference": "6.0.1",
+                "shasum": "154e5c627c8b32648cb4b4034a196a289b0626fa"
+            },
+            "require": {
+                "drupal/core": ">=9.1",
+                "php": ">=7.4"
+            },
+            "require-dev": {
+                "drupal/migrate_example_advanced_setup": "*",
+                "drupal/migrate_example_setup": "*"
+            },
+            "suggest": {
+                "ext-soap": "*",
+                "sainsburys/guzzle-oauth2-plugin": "3.0 required for the OAuth2 authentication plugin"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "6.0.1",
+                    "datestamp": "1672428002",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Mike Ryan",
+                    "homepage": "https://www.drupal.org/u/mikeryan",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "Lucas Hedding",
+                    "homepage": "https://www.drupal.org/u/heddn",
+                    "role": "Maintainer"
+                },
+                {
+                    "name": "mikeryan",
+                    "homepage": "https://www.drupal.org/user/4420"
+                }
+            ],
+            "description": "Enhancements to core migration support.",
+            "homepage": "https://www.drupal.org/project/migrate_plus",
+            "support": {
+                "source": "https://git.drupalcode.org/project/migrate_plus",
+                "issues": "https://www.drupal.org/project/issues/migrate_plus",
+                "slack": "#migrate"
             }
         },
         {
@@ -4204,12 +4251,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/solody/product_adverts.git",
-                "reference": "f9fa6e8a668d91e8752c0812facab739406ad0b5"
+                "reference": "c862440ce3155c39bbc96e501b5c6bfa217d439d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/solody/product_adverts/zipball/f9fa6e8a668d91e8752c0812facab739406ad0b5",
-                "reference": "f9fa6e8a668d91e8752c0812facab739406ad0b5",
+                "url": "https://api.github.com/repos/solody/product_adverts/zipball/c862440ce3155c39bbc96e501b5c6bfa217d439d",
+                "reference": "c862440ce3155c39bbc96e501b5c6bfa217d439d",
                 "shasum": ""
             },
             "require": {
@@ -4229,7 +4276,7 @@
                 "issues": "https://www.drupal.org/project/issues/product_adverts",
                 "source": "https://git.drupalcode.org/project/product_adverts"
             },
-            "time": "2023-03-23T03:15:00+00:00"
+            "time": "2023-03-24T06:58:37+00:00"
         },
         {
             "name": "drupal/profile",
@@ -4868,12 +4915,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/weeshop/weeshop_alpha_components.git",
-                "reference": "4bf6450f8a04d451dfe5ed40c0e4465c970cd326"
+                "reference": "87676c0f2205947e2fa731d0a3bd06d2d53e2303"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/weeshop/weeshop_alpha_components/zipball/4bf6450f8a04d451dfe5ed40c0e4465c970cd326",
-                "reference": "4bf6450f8a04d451dfe5ed40c0e4465c970cd326",
+                "url": "https://api.github.com/repos/weeshop/weeshop_alpha_components/zipball/87676c0f2205947e2fa731d0a3bd06d2d53e2303",
+                "reference": "87676c0f2205947e2fa731d0a3bd06d2d53e2303",
                 "shasum": ""
             },
             "default-branch": true,
@@ -4884,7 +4931,7 @@
                 "issues": "https://www.drupal.org/project/issues/weeshop_alpha_components",
                 "source": "https://git.drupalcode.org/project/weeshop_alpha_components"
             },
-            "time": "2021-11-23T06:14:00+00:00"
+            "time": "2023-03-24T06:58:37+00:00"
         },
         {
             "name": "drupal/weeshop_demo",
@@ -4892,18 +4939,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/weeshop/weeshop_demo.git",
-                "reference": "f26f3a140304f704a6e6cf53fb064450a000fe7f"
+                "reference": "79246fb849c677a182ec2c311f506aebeec6f299"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/weeshop/weeshop_demo/zipball/f26f3a140304f704a6e6cf53fb064450a000fe7f",
-                "reference": "f26f3a140304f704a6e6cf53fb064450a000fe7f",
+                "url": "https://api.github.com/repos/weeshop/weeshop_demo/zipball/79246fb849c677a182ec2c311f506aebeec6f299",
+                "reference": "79246fb849c677a182ec2c311f506aebeec6f299",
                 "shasum": ""
             },
             "require": {
                 "drupal/migrate_file": "^2.0",
-                "drupal/migrate_inline_image": "^1.0-beta3",
+                "drupal/migrate_inline_image": "dev-8.x-1.x",
                 "drupal/migrate_manifest": "^3.0",
+                "drupal/migrate_plus": "^6.0",
                 "drupal/migrate_source_csv": "^3.4",
                 "drupal/migrate_tools": "^6.0"
             },
@@ -4928,7 +4976,7 @@
                 "issues": "https://www.drupal.org/project/issues/weeshop_demo",
                 "source": "https://cgit.drupalcode.org/weeshop_demo"
             },
-            "time": "2023-03-23T03:57:17+00:00"
+            "time": "2023-03-24T07:11:24+00:00"
         },
         {
             "name": "drupal/weeshop_molla",
@@ -7766,6 +7814,86 @@
             "time": "2022-01-02T09:53:40+00:00"
         },
         {
+            "name": "symfony/dom-crawler",
+            "version": "v4.4.45",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/dom-crawler.git",
+                "reference": "4b8daf6c56801e6d664224261cb100b73edc78a5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/4b8daf6c56801e6d664224261cb100b73edc78a5",
+                "reference": "4b8daf6c56801e6d664224261cb100b73edc78a5",
+                "shasum": "",
+                "mirrors": [
+                    {
+                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
+                        "preferred": true
+                    }
+                ]
+            },
+            "require": {
+                "php": ">=7.1.3",
+                "symfony/polyfill-ctype": "~1.8",
+                "symfony/polyfill-mbstring": "~1.0",
+                "symfony/polyfill-php80": "^1.16"
+            },
+            "conflict": {
+                "masterminds/html5": "<2.6"
+            },
+            "require-dev": {
+                "masterminds/html5": "^2.6",
+                "symfony/css-selector": "^3.4|^4.0|^5.0"
+            },
+            "suggest": {
+                "symfony/css-selector": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\DomCrawler\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Eases DOM navigation for HTML and XML documents",
+            "homepage": "https://symfony.com",
+            "support": {
+                "source": "https://github.com/symfony/dom-crawler/tree/v4.4.45"
+            },
+            "funding": [
+                {
+                    "url": "https://symfony.com/sponsor",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/fabpot",
+                    "type": "github"
+                },
+                {
+                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
+                    "type": "tidelift"
+                }
+            ],
+            "time": "2022-08-03T12:57:57+00:00"
+        },
+        {
             "name": "symfony/error-handler",
             "version": "v4.4.44",
             "source": {
@@ -10564,12 +10692,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/weeshop/WeeShop.git",
-                "reference": "561044c56bb1039eac4cdae4eb68f8570204ab1a"
+                "reference": "1c49f135c1e442d576920a18885514a0a644ed26"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/weeshop/WeeShop/zipball/561044c56bb1039eac4cdae4eb68f8570204ab1a",
-                "reference": "561044c56bb1039eac4cdae4eb68f8570204ab1a",
+                "url": "https://api.github.com/repos/weeshop/WeeShop/zipball/1c49f135c1e442d576920a18885514a0a644ed26",
+                "reference": "1c49f135c1e442d576920a18885514a0a644ed26",
                 "shasum": ""
             },
             "require": {
@@ -10610,7 +10738,7 @@
                 "source": "https://github.com/weeshop/WeeShop/tree/8.x-1.x",
                 "issues": "https://github.com/weeshop/WeeShop/issues"
             },
-            "time": "2023-03-23T04:13:26+00:00"
+            "time": "2023-03-24T07:09:10+00:00"
         },
         {
             "name": "wikimedia/composer-merge-plugin",
@@ -15418,86 +15546,6 @@
                 }
             ],
             "time": "2022-07-25T12:56:14+00:00"
-        },
-        {
-            "name": "symfony/dom-crawler",
-            "version": "v4.4.45",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/symfony/dom-crawler.git",
-                "reference": "4b8daf6c56801e6d664224261cb100b73edc78a5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/symfony/dom-crawler/zipball/4b8daf6c56801e6d664224261cb100b73edc78a5",
-                "reference": "4b8daf6c56801e6d664224261cb100b73edc78a5",
-                "shasum": "",
-                "mirrors": [
-                    {
-                        "url": "https://mirrors.aliyun.com/composer/dists/%package%/%reference%.%type%",
-                        "preferred": true
-                    }
-                ]
-            },
-            "require": {
-                "php": ">=7.1.3",
-                "symfony/polyfill-ctype": "~1.8",
-                "symfony/polyfill-mbstring": "~1.0",
-                "symfony/polyfill-php80": "^1.16"
-            },
-            "conflict": {
-                "masterminds/html5": "<2.6"
-            },
-            "require-dev": {
-                "masterminds/html5": "^2.6",
-                "symfony/css-selector": "^3.4|^4.0|^5.0"
-            },
-            "suggest": {
-                "symfony/css-selector": ""
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Symfony\\Component\\DomCrawler\\": ""
-                },
-                "exclude-from-classmap": [
-                    "/Tests/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Symfony Community",
-                    "homepage": "https://symfony.com/contributors"
-                }
-            ],
-            "description": "Eases DOM navigation for HTML and XML documents",
-            "homepage": "https://symfony.com",
-            "support": {
-                "source": "https://github.com/symfony/dom-crawler/tree/v4.4.45"
-            },
-            "funding": [
-                {
-                    "url": "https://symfony.com/sponsor",
-                    "type": "custom"
-                },
-                {
-                    "url": "https://github.com/fabpot",
-                    "type": "github"
-                },
-                {
-                    "url": "https://tidelift.com/funding/github/packagist/symfony/symfony",
-                    "type": "tidelift"
-                }
-            ],
-            "time": "2022-08-03T12:57:57+00:00"
         },
         {
             "name": "symfony/lock",
