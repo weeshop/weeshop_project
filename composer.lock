@@ -1412,16 +1412,16 @@
         },
         {
             "name": "doctrine/deprecations",
-            "version": "v1.0.0",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/deprecations.git",
-                "reference": "0e2a4f1f8cdfc7a92ec3b01c9334898c806b30de"
+                "reference": "8cffffb2218e01f3b370bf763e00e81697725259"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/deprecations/zipball/0e2a4f1f8cdfc7a92ec3b01c9334898c806b30de",
-                "reference": "0e2a4f1f8cdfc7a92ec3b01c9334898c806b30de",
+                "url": "https://api.github.com/repos/doctrine/deprecations/zipball/8cffffb2218e01f3b370bf763e00e81697725259",
+                "reference": "8cffffb2218e01f3b370bf763e00e81697725259",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -1455,9 +1455,9 @@
             "homepage": "https://www.doctrine-project.org/",
             "support": {
                 "issues": "https://github.com/doctrine/deprecations/issues",
-                "source": "https://github.com/doctrine/deprecations/tree/v1.0.0"
+                "source": "https://github.com/doctrine/deprecations/tree/v1.1.0"
             },
-            "time": "2022-05-02T15:47:09+00:00"
+            "time": "2023-05-29T18:55:17+00:00"
         },
         {
             "name": "doctrine/lexer",
@@ -10853,12 +10853,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/weeshop/WeeShop.git",
-                "reference": "e2c7ff9899ea3c7cd1c88781911d9eb9f5b8c141"
+                "reference": "a6d2a90d63ac9888c785a147498620ef86ca2b6f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/weeshop/WeeShop/zipball/e2c7ff9899ea3c7cd1c88781911d9eb9f5b8c141",
-                "reference": "e2c7ff9899ea3c7cd1c88781911d9eb9f5b8c141",
+                "url": "https://api.github.com/repos/weeshop/WeeShop/zipball/a6d2a90d63ac9888c785a147498620ef86ca2b6f",
+                "reference": "a6d2a90d63ac9888c785a147498620ef86ca2b6f",
                 "shasum": ""
             },
             "require": {
@@ -10900,7 +10900,7 @@
                 "source": "https://github.com/weeshop/WeeShop/tree/8.x-1.x",
                 "issues": "https://github.com/weeshop/WeeShop/issues"
             },
-            "time": "2023-03-31T06:21:51+00:00"
+            "time": "2023-05-29T07:12:51+00:00"
         },
         {
             "name": "wikimedia/composer-merge-plugin",
@@ -13299,16 +13299,16 @@
         },
         {
             "name": "phpdocumentor/type-resolver",
-            "version": "1.7.1",
+            "version": "1.7.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/TypeResolver.git",
-                "reference": "dfc078e8af9c99210337325ff5aa152872c98714"
+                "reference": "b2fe4d22a5426f38e014855322200b97b5362c0d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/dfc078e8af9c99210337325ff5aa152872c98714",
-                "reference": "dfc078e8af9c99210337325ff5aa152872c98714",
+                "url": "https://api.github.com/repos/phpDocumentor/TypeResolver/zipball/b2fe4d22a5426f38e014855322200b97b5362c0d",
+                "reference": "b2fe4d22a5426f38e014855322200b97b5362c0d",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -13357,9 +13357,9 @@
             "description": "A PSR-5 based resolver of Class names, Types and Structural Element Names",
             "support": {
                 "issues": "https://github.com/phpDocumentor/TypeResolver/issues",
-                "source": "https://github.com/phpDocumentor/TypeResolver/tree/1.7.1"
+                "source": "https://github.com/phpDocumentor/TypeResolver/tree/1.7.2"
             },
-            "time": "2023-03-27T19:02:04+00:00"
+            "time": "2023-05-30T18:13:47+00:00"
         },
         {
             "name": "phpspec/prophecy",

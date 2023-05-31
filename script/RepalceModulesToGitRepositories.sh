@@ -39,9 +39,9 @@ tryCommand "rm -rf ./weeshop_molla_supports && git clone git@github.com:weeshop/
 
 cd ../../themes/contrib || exit
 
-tryCommand "rm -rf ./weeshop_alpha && git clone git@github.com:weeshop/weeshop_alpha.git" 40
+tryCommand "rm -rf ./weeshop_alpha && git clone git@github.com:weeshop/weeshop_alpha.git" 60
 
-tryCommand "rm -rf ./weeshop_molla && git clone git@github.com:weeshop/weeshop_molla.git" 40
+tryCommand "rm -rf ./weeshop_molla && git clone git@github.com:weeshop/weeshop_molla.git" 60
 
 
 
