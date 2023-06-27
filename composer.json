@@ -98,7 +98,7 @@
     "scripts": {
         "post-update-cmd": [
             "Composer\\Config::disableProcessTimeout",
-            "script/RepalceModulesToGitRepositories.sh"
+            "scripts/RepalceModulesToGitRepositories.sh"
         ]
     },
     "config": {

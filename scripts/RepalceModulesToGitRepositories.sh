@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source ./TryCommand.sh
+source ./scripts/TryCommand.sh
 
 
 # https://www.drupal.org/project/facets/issues/3349266
