@@ -4,7 +4,7 @@ source ./scripts/TryCommand.sh
 
 
 # https://www.drupal.org/project/facets/issues/3349266
-cp -r ./script/config ./web/modules/contrib/facets/modules/facets_rest
+cp -r ./scripts/config ./web/modules/contrib/facets/modules/facets_rest
 
 cd ./web/modules/contrib || exit
 
