@@ -20,15 +20,11 @@ tryCommand "rm -rf ./enhanced_store && git clone git@github.com:solody/enhanced_
 
 tryCommand "rm -rf ./weeshop_demo && git clone git@github.com:weeshop/weeshop_demo.git"
 
-tryCommand "rm -rf ./weeshop_alpha_components && git clone git@github.com:weeshop/weeshop_alpha_components.git"
-
 tryCommand "rm -rf ./weeshop_molla_supports && git clone git@github.com:weeshop/weeshop_molla_supports.git"
 
 
 
 cd ../../themes/contrib || exit
-
-tryCommand "rm -rf ./weeshop_alpha && git clone git@github.com:weeshop/weeshop_alpha.git" 60
 
 tryCommand "rm -rf ./weeshop_molla && git clone git@github.com:weeshop/weeshop_molla.git" 60
 
