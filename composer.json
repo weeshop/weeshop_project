@@ -19,8 +19,6 @@
                 "drupal/product_adverts",
                 "drupal/adverts",
                 "drupal/weeshop_demo",
-                "drupal/weeshop_alpha_components",
-                "drupal/weeshop_alpha",
                 "drupal/weeshop_molla",
                 "drupal/weeshop_molla_supports",
                 "drupal/migrate_inline_image"
@@ -41,14 +39,6 @@
         {
             "type": "vcs",
             "url":  "git@github.com:weeshop/weeshop_demo.git"
-        },
-        {
-            "type": "vcs",
-            "url":  "git@github.com:weeshop/weeshop_alpha_components.git"
-        },
-        {
-            "type": "vcs",
-            "url":  "git@github.com:weeshop/weeshop_alpha.git"
         },
         {
             "type": "vcs",
