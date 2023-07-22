@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6000f69a10ed12b2bf6b71c7298669e6",
+    "content-hash": "792b74fcbc2eea090ea1456df73ef4f9",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -3466,6 +3466,127 @@
             }
         },
         {
+            "name": "drupal/gin",
+            "version": "3.0.0-rc5",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/gin.git",
+                "reference": "8.x-3.0-rc5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/gin-8.x-3.0-rc5.zip",
+                "reference": "8.x-3.0-rc5",
+                "shasum": "81010b540822f0cfc114fd0548e4e27e56b6dc1c"
+            },
+            "require": {
+                "drupal/core": "^9 || ^10",
+                "drupal/gin_toolbar": "^1.0@beta"
+            },
+            "type": "drupal-theme",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-3.0-rc5",
+                    "datestamp": "1689504430",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "RC releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "scripts": {
+                "phpcs": [
+                    "phpcs -s --runtime-set ignore_warnings_on_exit 1 --runtime-set ignore_errors_on_exit 0 'web/modules/custom'"
+                ]
+            },
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "Sascha Eggenberger (saschaeggi)",
+                    "homepage": "https://www.drupal.org/u/saschaeggi",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "For a better Admin and Content Editor Experience.",
+            "homepage": "https://www.drupal.org/project/gin",
+            "support": {
+                "source": "https://git.drupalcode.org/project/gin",
+                "issues": "https://www.drupal.org/project/issues/gin"
+            },
+            "funding": [
+                {
+                    "type": "github",
+                    "url": "https://github.com/sponsors/saschaeggi"
+                },
+                {
+                    "type": "other",
+                    "url": "https://paypal.me/saschaeggi"
+                }
+            ]
+        },
+        {
+            "name": "drupal/gin_toolbar",
+            "version": "1.0.0-rc3",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/gin_toolbar.git",
+                "reference": "8.x-1.0-rc3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/gin_toolbar-8.x-1.0-rc3.zip",
+                "reference": "8.x-1.0-rc3",
+                "shasum": "f9ae6c1c086f008a2911eb2ced4740ac5c307faf"
+            },
+            "require": {
+                "drupal/core": "^9 || ^10"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "8.x-1.0-rc3",
+                    "datestamp": "1688477564",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "RC releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Sascha Eggenberger (saschaeggi)",
+                    "homepage": "https://www.drupal.org/u/saschaeggi",
+                    "role": "Maintainer"
+                }
+            ],
+            "description": "Gin Toolbar for Frontend use",
+            "homepage": "https://www.drupal.org/project/gin_toolbar",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/gin_toolbar",
+                "issues": "https://www.drupal.org/project/issues/gin_toolbar"
+            },
+            "funding": [
+                {
+                    "type": "github",
+                    "url": "https://github.com/sponsors/saschaeggi"
+                },
+                {
+                    "type": "other",
+                    "url": "https://paypal.me/saschaeggi"
+                }
+            ]
+        },
+        {
             "name": "drupal/inline_entity_form",
             "version": "1.0.0-rc15",
             "source": {
@@ -4031,12 +4152,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/solody/drupal-product_adverts.git",
-                "reference": "c862440ce3155c39bbc96e501b5c6bfa217d439d"
+                "reference": "26cf942f5d868d47c6737ea66b814959f36f24a5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/solody/drupal-product_adverts/zipball/c862440ce3155c39bbc96e501b5c6bfa217d439d",
-                "reference": "c862440ce3155c39bbc96e501b5c6bfa217d439d",
+                "url": "https://api.github.com/repos/solody/drupal-product_adverts/zipball/26cf942f5d868d47c6737ea66b814959f36f24a5",
+                "reference": "26cf942f5d868d47c6737ea66b814959f36f24a5",
                 "shasum": ""
             },
             "require": {
@@ -4056,7 +4177,7 @@
                 "issues": "https://www.drupal.org/project/issues/product_adverts",
                 "source": "https://git.drupalcode.org/project/product_adverts"
             },
-            "time": "2023-03-24T06:58:37+00:00"
+            "time": "2023-07-21T11:02:40+00:00"
         },
         {
             "name": "drupal/profile",
@@ -4668,12 +4789,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/weeshop/weeshop_demo.git",
-                "reference": "2c1778cb0ba2dcf9d628c7f2b153cf454f8addba"
+                "reference": "3a502dbc7f432ef99da0a62f8a5b3ce10a79c954"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/weeshop/weeshop_demo/zipball/2c1778cb0ba2dcf9d628c7f2b153cf454f8addba",
-                "reference": "2c1778cb0ba2dcf9d628c7f2b153cf454f8addba",
+                "url": "https://api.github.com/repos/weeshop/weeshop_demo/zipball/3a502dbc7f432ef99da0a62f8a5b3ce10a79c954",
+                "reference": "3a502dbc7f432ef99da0a62f8a5b3ce10a79c954",
                 "shasum": ""
             },
             "require": {
@@ -4704,7 +4825,7 @@
                 "issues": "https://www.drupal.org/project/issues/weeshop_demo",
                 "source": "https://cgit.drupalcode.org/weeshop_demo"
             },
-            "time": "2023-07-21T05:21:28+00:00"
+            "time": "2023-07-21T11:02:40+00:00"
         },
         {
             "name": "drupal/weeshop_molla",
@@ -10068,12 +10189,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/weeshop/WeeShop.git",
-                "reference": "1bab6acacd8741e91ac1ea64c11bc19a53e23d26"
+                "reference": "18b03e8094a44f8bfd47c324e625a18a1589a1b0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/weeshop/WeeShop/zipball/1bab6acacd8741e91ac1ea64c11bc19a53e23d26",
-                "reference": "1bab6acacd8741e91ac1ea64c11bc19a53e23d26",
+                "url": "https://api.github.com/repos/weeshop/WeeShop/zipball/18b03e8094a44f8bfd47c324e625a18a1589a1b0",
+                "reference": "18b03e8094a44f8bfd47c324e625a18a1589a1b0",
                 "shasum": ""
             },
             "require": {
@@ -10090,6 +10211,7 @@
                 "drupal/facets": "^3.0",
                 "drupal/features": "^3.0",
                 "drupal/geysir": "^2.0",
+                "drupal/gin": "^3.0",
                 "drupal/paragraphs": "^1.0",
                 "drupal/product_adverts": "dev-8.x-1.x",
                 "drupal/search_api": "^1.0",
@@ -10111,7 +10233,7 @@
                 "source": "https://github.com/weeshop/WeeShop/tree/8.x-1.x",
                 "issues": "https://github.com/weeshop/WeeShop/issues"
             },
-            "time": "2023-07-21T05:21:28+00:00"
+            "time": "2023-07-22T03:28:46+00:00"
         },
         {
             "name": "wikimedia/composer-merge-plugin",
