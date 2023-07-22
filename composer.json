@@ -18,6 +18,7 @@
                 "weeshop/weeshop",
                 "drupal/product_adverts",
                 "drupal/adverts",
+                "drupal/weeshop",
                 "drupal/weeshop_demo",
                 "drupal/weeshop_molla",
                 "drupal/weeshop_molla_supports",
