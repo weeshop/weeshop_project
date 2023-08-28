@@ -21,3 +21,4 @@ wget https://github.com/jwilder/dockerize/releases/download/$DOCKERIZE_VERSION/d
 
 #sed -i 'HOST *' /home/application/.ssh/config
 #sed -i '  ProxyCommand nc -x 192.168.246.1:8889 %h %p' /home/application/.ssh/config
+#sed -i '  ProxyCommand corkscrew 192.168.246.1 8889 %h %p' /home/application/.ssh/config
