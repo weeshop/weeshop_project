@@ -2,18 +2,21 @@
 # Sample settings for scripts. Copy this file to scripts/../scripts_setting.sh and modify as needed.
 export DRUPAL_PATH=./drupal
 export DRUPAL_MODULES_TO_REPLACE_TO_GIT=(
-"commerce_checkout_api 1.0.x"
-"commerce_refund 2.0.x"
-"front_page 1.0.x"
-"promotion_blocks 1.0.x"
-"sms_china 1.0.x"
-"user_phone 3.0.x"
-"migrate_source_markdown 1.0.x"
-"awesome_modules 1.0.x"
-"enhanced_user 2.0.x"
-"vip 2.0.x"
-"wechat_pay 3.0.x"
-"wechat_connect 3.0.x"
+"github.com solody drupal-migrate_inline_image 1.0.x migrate_inline_image"
+"github.com solody drupal-product_adverts 1.0.x product_adverts"
+"github.com solody drupal-adverts 1.0.x adverts"
+"github.com solody drupal-enhanced_product 1.0.x enhanced_product"
+"github.com solody drupal-enhanced_store 1.0.x enhanced_store"
+"github.com weeshop weeshop_demo 2.0.x weeshop_demo"
+"github.com weeshop weeshop_molla_supports 1.0.x weeshop_molla_supports"
+)
+
+export DRUPAL_THEMES_TO_REPLACE_TO_GIT=(
+"github.com weeshop weeshop_molla 1.0.x weeshop_molla"
+)
+
+export DRUPAL_PROFILES_TO_REPLACE_TO_GIT=(
+"github.com weeshop weeShop 1.0.x weeShop"
 )
 
 export CHROME_DRIVER_PATH=/home/kent/Downloads/chromedriver-linux64/chromedriver
