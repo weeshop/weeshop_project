@@ -75,34 +75,35 @@
         "cweagans/composer-patches": "^2.0",
         "dealerdirect/phpcodesniffer-composer-installer": "^0.7.1",
         "drupal/core-dev": "^11",
-        "drupal/devel_entity_updates": "dev-3454902-drupal-11-compatibility",
+        "drupal/devel": "^5.3",
+        "drupal/devel_entity_updates": "^5.0",
         "mglaman/drupal-check": "^1.2",
         "mglaman/phpstan-drupal": "^1.1",
         "phpspec/prophecy-phpunit": "^2",
-        "phpstan/extension-installer": "^1.1"
+        "phpstan/extension-installer": "^1.1",
+        "drupal/upgrade_status": "^4.3",
+        "palantirnet/drupal-rector": "^0.20"
     },
     "conflict": {
         "drupal/drupal": "*"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
-    "scripts": {
-        "post-update-cmd": [
-            "Composer\\Config::disableProcessTimeout",
-            "scripts/RepalceModulesToGitRepositories.sh"
-        ]
-    },
     "config": {
+        "process-timeout": 36000,
+        "preferred-install": "dist",
         "sort-packages": true,
         "allow-plugins": {
             "composer/installers": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "easywechat-composer/easywechat-composer": true,
             "cweagans/composer-patches": true,
             "drupal/core-composer-scaffold": true,
             "drupal/core-project-message": true,
-            "wikimedia/composer-merge-plugin": true,
-            "dealerdirect/phpcodesniffer-composer-installer": true,
             "phpstan/extension-installer": true,
-            "php-http/discovery": true
+            "wikimedia/composer-merge-plugin": true,
+            "php-http/discovery": true,
+            "tbachert/spi": true
         }
     },
     "extra": {

@@ -16,7 +16,7 @@ export DRUPAL_THEMES_TO_REPLACE_TO_GIT=(
 )
 
 export DRUPAL_PROFILES_TO_REPLACE_TO_GIT=(
-"github.com weeshop weeShop 1.0.x weeShop"
+"github.com weeshop weeShop 1.0.x weeshop"
 )
 
 export CHROME_DRIVER_PATH=/home/kent/Downloads/chromedriver-linux64/chromedriver
