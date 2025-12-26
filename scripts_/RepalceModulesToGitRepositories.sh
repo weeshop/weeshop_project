@@ -3,9 +3,6 @@
 source ./scripts/TryCommand.sh
 
 
-# https://www.drupal.org/project/facets/issues/3349266
-cp -r ./scripts/config ./web/modules/contrib/facets/modules/facets_rest
-
 cd ./web/modules/contrib || exit
 
 tryCommand "rm -rf ./migrate_inline_image && git clone git@github.com:solody/migrate_inline_image.git"
