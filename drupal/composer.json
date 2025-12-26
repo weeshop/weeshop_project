@@ -63,19 +63,19 @@
         }
     ],
     "require": {
-        "composer/installers": "^1.12",
-        "cweagans/composer-patches": "^1.7",
-        "drupal/core-composer-scaffold": "^10",
-        "drupal/core-project-message": "^10",
-        "drupal/core-recommended": "^10",
-        "drush/drush": "^12",
-        "wikimedia/composer-merge-plugin": "^2.0",
-        "weeshop/weeshop": "dev-8.x-1.x"
+        "composer/installers": "^2.0",
+        "drupal/core-composer-scaffold": "^11",
+        "drupal/core-project-message": "^11",
+        "drupal/core-recommended": "^11",
+        "drush/drush": "^13",
+        "wikimedia/composer-merge-plugin": "^2.1",
+        "weeshop/weeshop": "1.0.x-dev"
     },
     "require-dev": {
+        "cweagans/composer-patches": "^2.0",
         "dealerdirect/phpcodesniffer-composer-installer": "^0.7.1",
-        "drupal/core-dev": "^10",
-        "drupal/devel_entity_updates": "^4.0",
+        "drupal/core-dev": "^11",
+        "drupal/devel_entity_updates": "dev-3454902-drupal-11-compatibility",
         "mglaman/drupal-check": "^1.2",
         "mglaman/phpstan-drupal": "^1.1",
         "phpspec/prophecy-phpunit": "^2",
