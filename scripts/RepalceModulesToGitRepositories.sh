@@ -23,7 +23,7 @@ current_path=`pwd`
 cd $DRUPAL_PATH/web/themes/contrib || exit
 for i in "${!DRUPAL_THEMES_TO_REPLACE_TO_GIT[@]}"
 do
-  doWithArs ${DRUPAL_THEMES_TO_REPLACE_TO_GIT[$i]}
+  doWithArs "${DRUPAL_THEMES_TO_REPLACE_TO_GIT[$i]}"
 done
 cd $current_path
 
@@ -31,6 +31,6 @@ current_path=`pwd`
 cd $DRUPAL_PATH/web/profiles/contrib || exit
 for i in "${!DRUPAL_PROFILES_TO_REPLACE_TO_GIT[@]}"
 do
-  doWithArs ${DRUPAL_PROFILES_TO_REPLACE_TO_GIT[$i]}
+  doWithArs "${DRUPAL_PROFILES_TO_REPLACE_TO_GIT[$i]}"
 done
 cd $current_path
