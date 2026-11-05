@@ -11,7 +11,8 @@ source "$ENV_FILE"
 set +a
 
 MYSQL_DATA_DIR="${DATA_PATH}/mysql"
-FILES_DIR="${DRUPAL_PATH}/web/sites/default/files"
+SITE_DEFAULT="${DRUPAL_PATH}/web/sites/default"
+FILES_DIR="${SITE_DEFAULT}/files"
 
 echo "Stopping containers..."
 ./docker-down.sh
@@ -19,7 +20,12 @@ echo "Stopping containers..."
 echo "Removing MySQL data: ${MYSQL_DATA_DIR}"
 sudo rm -rf "${MYSQL_DATA_DIR}"
 
-echo "Removing public files: ${FILES_DIR}"
+echo "Removing site settings and public files under: ${SITE_DEFAULT}"
+# Drupal may have locked the directory to 0555 after install.
+if [[ -d "${SITE_DEFAULT}" ]]; then
+  chmod u+w "${SITE_DEFAULT}" || sudo chmod u+w "${SITE_DEFAULT}"
+fi
+rm -f "${SITE_DEFAULT}/settings.php" "${SITE_DEFAULT}/settings.local.php" "${SITE_DEFAULT}/services.yml"
 if [[ -d "${FILES_DIR}" ]]; then
   sudo rm -rf "${FILES_DIR:?}"/*
   # Keep the directory itself for the next install.

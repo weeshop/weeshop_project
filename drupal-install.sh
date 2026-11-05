@@ -37,6 +37,11 @@ do
 done
 echo "Database is ready."
 
+SITE_DEFAULT="${DRUPAL_PATH}/web/sites/default"
+# Drupal locks sites/default to 0555 after install; reopen for settings.php.
+chmod u+w "${SITE_DEFAULT}"
+mkdir -p "${SITE_DEFAULT}/files"
+
 ./docker-exec.sh -u application cli vendor/bin/drush site:install "${DRUPAL_PROFILE}" \
   install_configure_form.enable_update_status_emails=NULL \
   --db-url="mysql://root:${MYSQL_ROOT_PASSWORD}@db:3306/${MYSQL_DATABASE}" \
