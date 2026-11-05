@@ -5,6 +5,9 @@ cd "$SCRIPT_DIR/.."
 PREFIX="${SCRIPT_DIR#$(pwd)/}"
 BRANCH="${2:-main}"
 
+# git-subtree uses diff-index without refresh; avoid false "has modifications".
+git update-index -q --refresh
+
 echo "Operating $1 for $PREFIX subtree (branch: $BRANCH)..."
 
 case $1 in
