@@ -9,6 +9,8 @@ services:
       php.opcache.save_comments: 1
       php.opcache.max_wasted_percentage: 100
       php.opcache.enable_cli: 1
-      php.opcache.file_cache: "/app/data/opcache"
+      php.opcache.file_cache: "/tmp/php-opcache"
       php.opcache.file_cache_only: 0
       php.opcache.enable: 1
+      # file_cache disabled: previous /app/data/opcache path did not exist and crashed php-fpm.
+      # Memory opcache is enough for local dev.

@@ -6,6 +6,7 @@ services:
       - "80:80"
     volumes:
       - "${DRUPAL_PATH}:/app:cached"
+      - "${DATA_PATH}/opcache:/tmp/php-opcache:cached"
       - "${USER_HOME}/.composer:/home/application/.composer:cached"
       - "${USER_HOME}/.ssh:/home/application/.ssh:cached"
     restart: always
