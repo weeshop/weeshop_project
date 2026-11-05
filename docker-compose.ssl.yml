@@ -1,0 +1,7 @@
+services:
+  web:
+    ports:
+      - "443:443"
+    volumes:
+      - "${CERT_PATH}/${DOMAIN}_public.crt:/opt/docker/etc/httpd/ssl/server.crt:cached"
+      - "${CERT_PATH}/${DOMAIN}.key:/opt/docker/etc/httpd/ssl/server.key:cached"

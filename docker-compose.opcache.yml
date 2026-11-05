@@ -1,0 +1,14 @@
+services:
+  web:
+    environment:
+      PHP_OPCACHE_MEMORY_CONSUMPTION: 256
+      PHP_OPCACHE_MAX_ACCELERATED_FILES: 1000000
+      PHP_OPCACHE_VALIDATE_TIMESTAMPS: 1
+      PHP_OPCACHE_REVALIDATE_FREQ: 1
+      PHP_OPCACHE_INTERNED_STRINGS_BUFFER: 16
+      php.opcache.save_comments: 1
+      php.opcache.max_wasted_percentage: 100
+      php.opcache.enable_cli: 1
+      php.opcache.file_cache: "/app/data/opcache"
+      php.opcache.file_cache_only: 0
+      php.opcache.enable: 1

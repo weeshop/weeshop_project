@@ -1,0 +1,5 @@
+services:
+  web:
+    environment:
+      php.opcache.jit_buffer_size: 100M
+      php.opcache.jit: 1255
