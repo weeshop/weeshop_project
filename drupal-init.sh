@@ -30,6 +30,17 @@ sed \
   -e "s|^!sites/|!/${DRUPAL_REL}/web/sites/|" \
   "$GITIGNORE_SRC" > "$GITIGNORE_DEST"
 
+# Composer-managed Drupal paths and local data directory.
+cat >> "$GITIGNORE_DEST" <<EOF
+
+/${DRUPAL_REL}/web/core/
+/${DRUPAL_REL}/web/modules/contrib/
+/${DRUPAL_REL}/web/themes/contrib/
+/${DRUPAL_REL}/web/profiles/contrib/
+/data/
+.idea/
+EOF
+
 ./docker-exec.sh -u application cli composer config minimum-stability dev
 ./docker-exec.sh -u application cli composer config process-timeout 36000
 ./docker-exec.sh -u application cli composer config preferred-install dist
