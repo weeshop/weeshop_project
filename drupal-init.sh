@@ -12,6 +12,11 @@ set +a
 
 mkdir -p "$DRUPAL_PATH"
 
+cp phpcs.xml.dist "${DRUPAL_PATH}/phpcs.xml"
+# shellcheck disable=SC2016
+envsubst '${SIMPLETEST_BASE_URL} ${SIMPLETEST_DB} ${BROWSERTEST_OUTPUT_BASE_URL} ${MINK_DRIVER_ARGS_WEBDRIVER}' \
+  < phpunit.xml.dist > "${DRUPAL_PATH}/phpunit.xml"
+
 ./docker-exec.sh -u application cli composer config minimum-stability dev
 ./docker-exec.sh -u application cli composer config process-timeout 36000
 ./docker-exec.sh -u application cli composer config preferred-install dist
@@ -34,13 +39,13 @@ mkdir -p "$DRUPAL_PATH"
   \"merge-extra\": false
 }"
 
+#  mglaman/drupal-check is removed because it is not compatible with mglaman/phpstan-drupal 2.x.
 ./docker-exec.sh -u application cli composer require --dev -W \
   cweagans/composer-patches \
   dealerdirect/phpcodesniffer-composer-installer \
   drupal/core-dev \
   drupal/devel \
   drupal/devel_entity_updates \
-  mglaman/drupal-check \
   mglaman/phpstan-drupal \
   phpspec/prophecy-phpunit \
   phpstan/extension-installer \
