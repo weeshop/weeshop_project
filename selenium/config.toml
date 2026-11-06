@@ -1,0 +1,16 @@
+[server]
+port = 4444
+host = '0.0.0.0'
+bind-host = false
+
+[sessionqueue]
+session-request-timeout = 500
+
+[node]
+drivers = ["chrome"]
+max-sessions = 3
+detect-drivers = false
+[[node.driver-configuration]]
+display-name = "Chrome"
+stereotype = "{\"browserName\": \"chrome\", \"browserVersion\": \"108\", \"platformName\": \"LINUX\"}"
+webdriver-executable = '/home/kent/PhpstormProjects/drupalcode_template/selenium/chromedriver_linux64/chromedriver'

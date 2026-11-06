@@ -37,6 +37,7 @@ cat >> "$GITIGNORE_DEST" <<EOF
 /${DRUPAL_REL}/web/modules/contrib/
 /${DRUPAL_REL}/web/themes/contrib/
 /${DRUPAL_REL}/web/profiles/contrib/
+node_modules/
 /data/
 .idea/
 EOF
