@@ -17,6 +17,19 @@ cp phpcs.xml.dist "${DRUPAL_PATH}/phpcs.xml"
 envsubst '${SIMPLETEST_BASE_URL} ${SIMPLETEST_DB} ${BROWSERTEST_OUTPUT_BASE_URL} ${MINK_DRIVER_ARGS_WEBDRIVER}' \
   < phpunit.xml.dist > "${DRUPAL_PATH}/phpunit.xml"
 
+# Copy Drupal's example.gitignore to the project root and rewrite paths for this layout.
+PROJECT_ROOT="$(cd .. && pwd)"
+DRUPAL_ABS="$(cd "$DRUPAL_PATH" && pwd)"
+DRUPAL_REL="${DRUPAL_ABS#"$PROJECT_ROOT"/}"
+GITIGNORE_SRC="${DRUPAL_PATH}/web/example.gitignore"
+GITIGNORE_DEST="${PROJECT_ROOT}/.gitignore"
+sed \
+  -e "s|^# core$|# /${DRUPAL_REL}/web/core|" \
+  -e "s|^/vendor/$|/${DRUPAL_REL}/vendor/|" \
+  -e "s|^sites/|/${DRUPAL_REL}/web/sites/|" \
+  -e "s|^!sites/|!/${DRUPAL_REL}/web/sites/|" \
+  "$GITIGNORE_SRC" > "$GITIGNORE_DEST"
+
 ./docker-exec.sh -u application cli composer config minimum-stability dev
 ./docker-exec.sh -u application cli composer config process-timeout 36000
 ./docker-exec.sh -u application cli composer config preferred-install dist
