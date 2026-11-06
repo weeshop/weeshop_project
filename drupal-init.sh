@@ -12,6 +12,7 @@ set +a
 
 mkdir -p "$DRUPAL_PATH"
 
+./docker-exec.sh -u application cli composer config minimum-stability dev
 ./docker-exec.sh -u application cli composer config allow-plugins.symfony/runtime true
 ./docker-exec.sh -u application cli composer config allow-plugins.wikimedia/composer-merge-plugin true
 ./docker-exec.sh -u application cli composer config allow-plugins.cweagans/composer-patches true
