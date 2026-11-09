@@ -21,4 +21,4 @@ if [[ "${SSL:-}" == "true" ]]; then
   COMPOSE_FILES+=(-f docker-compose.ssl.yml)
 fi
 
-docker compose --env-file "$ENV_FILE" "${COMPOSE_FILES[@]}" up -d
+docker compose --project-name "$PROJECT_NAME" --env-file "$ENV_FILE" "${COMPOSE_FILES[@]}" up -d

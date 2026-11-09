@@ -24,5 +24,5 @@ fi
 echo "Executing command in container: $*"
 
 # -T: never allocate a TTY (required for scripted/non-interactive use)
-docker compose --env-file "$ENV_FILE" "${COMPOSE_FILES[@]}" \
+docker compose --project-name "$PROJECT_NAME" --env-file "$ENV_FILE" "${COMPOSE_FILES[@]}" \
   exec -T "$@"
