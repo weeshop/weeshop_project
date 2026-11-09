@@ -24,7 +24,7 @@ fi
 echo "Waiting for database on db:3306 ..."
 # Avoid wrapping docker exec in `timeout` (can hang with uutils timeout).
 # --connect-timeout keeps each probe short while MySQL is still initializing.
-until docker compose --env-file "$ENV_FILE" "${COMPOSE_FILES[@]}" exec -T db \
+until ./docker-exec.sh db \
   mysqladmin ping \
     -h127.0.0.1 \
     -uroot \
