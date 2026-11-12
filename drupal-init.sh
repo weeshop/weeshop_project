@@ -14,7 +14,7 @@ mkdir -p "$DRUPAL_PATH"
 
 cp phpcs.xml.dist "${DRUPAL_PATH}/phpcs.xml"
 # shellcheck disable=SC2016
-envsubst '${SIMPLETEST_BASE_URL} ${SIMPLETEST_DB} ${BROWSERTEST_OUTPUT_BASE_URL} ${MINK_DRIVER_ARGS_WEBDRIVER}' \
+envsubst '${SIMPLETEST_BASE_URL} ${SIMPLETEST_DB} ${BROWSERTEST_OUTPUT_BASE_URL} ${BROWSERTEST_OUTPUT_DIRECTORY} ${MINK_DRIVER_ARGS_WEBDRIVER}' \
   < phpunit.xml.dist > "${DRUPAL_PATH}/phpunit.xml"
 
 # Copy Drupal's example.gitignore to the project root and rewrite paths for this layout.
