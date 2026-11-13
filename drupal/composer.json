@@ -27,15 +27,15 @@
         },
         {
             "type": "vcs",
-            "url":  "git@github.com:solody/migrate_inline_image.git"
+            "url":  "git@github.com:solody/drupal-migrate_inline_image.git"
         },
         {
             "type": "vcs",
-            "url":  "git@github.com:solody/product_adverts.git"
+            "url":  "git@github.com:solody/drupal-product_adverts.git"
         },
         {
             "type": "vcs",
-            "url":  "git@github.com:solody/adverts.git"
+            "url":  "git@github.com:solody/drupal-adverts.git"
         },
         {
             "type": "vcs",
@@ -55,11 +55,11 @@
         },
         {
             "type": "vcs",
-            "url":  "git@github.com:solody/enhanced_product.git"
+            "url":  "git@github.com:solody/drupal-enhanced_product.git"
         },
         {
             "type": "vcs",
-            "url":  "git@github.com:solody/enhanced_store.git"
+            "url":  "git@github.com:solody/drupal-enhanced_store.git"
         }
     ],
     "require": {
