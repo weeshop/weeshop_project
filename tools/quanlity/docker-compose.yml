@@ -1,0 +1,20 @@
+services:
+
+  cli:
+    image: webdevops/php:${PHP_VERSION}
+    volumes:
+      - "../${DRUPAL_PATH}:/app:cached"
+      - "${USER_HOME}/.composer:/home/application/.composer:cached"
+      - "${USER_HOME}/.ssh:/home/application/.ssh:cached"
+    restart: always
+    working_dir: /app
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+      - "${DOMAIN}:host-gateway"
+    environment:
+      TZ: ${TIMEZONE}
+      PHP_DATE_TIMEZONE: ${TIMEZONE}
+      PHP_MEMORY_LIMIT: 1G
+      # This line is necessary which support cli debug in remote host.
+      # "localhost" is the mapping server configuration name set in PhpStorm.
+      PHP_IDE_CONFIG: "serverName=${DOMAIN}"

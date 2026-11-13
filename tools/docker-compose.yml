@@ -1,0 +1,64 @@
+services:
+
+  web:
+    image: webdevops/php-apache-dev:${PHP_VERSION}
+    ports:
+      - "80:80"
+    volumes:
+      - "${DRUPAL_PATH}:/app:cached"
+      - "${DATA_PATH}/opcache:/tmp/php-opcache:cached"
+      - "${USER_HOME}/.composer:/home/application/.composer:cached"
+      - "${USER_HOME}/.ssh:/home/application/.ssh:cached"
+    restart: always
+    working_dir: /app
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+      - "${DOMAIN}:host-gateway"
+    environment:
+      WEB_ALIAS_DOMAIN: ${DOMAIN}
+      TZ: ${TIMEZONE}
+      PHP_DATE_TIMEZONE: ${TIMEZONE}
+      WEB_DOCUMENT_ROOT: /app/web
+      PHP_MEMORY_LIMIT: 2G
+      XDEBUG_DISCOVER_CLIENT_HOST: "true"
+      XDEBUG_CLIENT_HOST: host.docker.internal
+      # XDEBUG_CLIENT_HOST: localhost
+      XDEBUG_MODE: debug
+      XDEBUG_START_WITH_REQUEST: "yes"
+      # This line is necessary which support cli debug in remote host.
+      # "localhost" is the mapping server configuration name set in PhpStorm.
+      PHP_IDE_CONFIG: "serverName=${DOMAIN}"
+      FPM_PM_MAX_CHILDREN: 500
+      FPM_PROCESS_MAX: 100
+
+  db:
+    image: mysql:${MYSQL_VERSION}
+    ports:
+      - "3306:3306"
+    volumes:
+      - "${DATA_PATH}/mysql:/var/lib/mysql:delegated"
+    restart: always
+    environment:
+      TZ: ${TIMEZONE}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${MYSQL_DATABASE}
+  cli:
+    image: webdevops/php:${PHP_VERSION}
+    volumes:
+      - "${DRUPAL_PATH}:/app:cached"
+      - "${USER_HOME}/.composer:/home/application/.composer:cached"
+      - "${USER_HOME}/.ssh:/home/application/.ssh:cached"
+    restart: always
+    working_dir: /app
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+      - "${DOMAIN}:host-gateway"
+    environment:
+      WEB_ALIAS_DOMAIN: ${DOMAIN}
+      TZ: ${TIMEZONE}
+      PHP_DATE_TIMEZONE: ${TIMEZONE}
+      WEB_DOCUMENT_ROOT: /app/web
+      PHP_MEMORY_LIMIT: 1G
+      # This line is necessary which support cli debug in remote host.
+      # "localhost" is the mapping server configuration name set in PhpStorm.
+      PHP_IDE_CONFIG: "serverName=${DOMAIN}"
