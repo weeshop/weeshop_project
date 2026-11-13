@@ -12,17 +12,17 @@ product_adverts 1.0.x
 adverts 1.0.x
 enhanced_product 1.0.x
 enhanced_store 1.0.x
-weeshop_demo 2.0.x
-weeshop_molla_supports 1.0.x
+weeshop_demo 2.0.x git@github.com:weeshop/weeshop_demo.git
+weeshop_molla_supports 1.0.x git@github.com:weeshop/weeshop_molla_supports.git
 EOF
 )"
 
 DRUPAL_VCS_THEMES="$(cat <<'EOF'
-weeshop_molla 1.0.x
+weeshop_molla 1.0.x git@github.com:weeshop/weeshop_molla.git
 EOF
 )"
 
 DRUPAL_VCS_PROFILES="$(cat <<'EOF'
-weeshop 1.0.x
+weeshop 1.0.x git@github.com:weeshop/WeeShop.git
 EOF
 )"
