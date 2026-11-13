@@ -1,0 +1,17 @@
+{
+    "_hash": "52749bf19d46b15b4360031925da82b6093d18b1e38eeb67925495dfce775370",
+    "patches": {
+        "drupal/core": [
+            {
+                "package": "drupal/core",
+                "description": "Views contextual filter summary doesn't works with multilingual",
+                "url": "https://www.drupal.org/files/issues/2021-06-13/0001-Issues-3218573-Views-contextual-filter-summary-dosen_0.patch",
+                "sha256": "8bbafd8969f9e936c586a1fcff2e6736234e01e73e22e0fb63b14dc1410fa4a4",
+                "depth": 2,
+                "extra": {
+                    "provenance": "root"
+                }
+            }
+        ]
+    }
+}
