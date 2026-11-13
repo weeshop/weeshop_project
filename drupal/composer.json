@@ -11,7 +11,55 @@
     "repositories": [
         {
             "type": "composer",
-            "url": "https://packages.drupal.org/8"
+            "url": "https://packages.drupal.org/8",
+            "exclude": [
+                "drupal/enhanced_product",
+                "drupal/enhanced_store",
+                "weeshop/weeshop",
+                "drupal/product_adverts",
+                "drupal/adverts",
+                "drupal/weeshop",
+                "drupal/weeshop_demo",
+                "drupal/weeshop_molla",
+                "drupal/weeshop_molla_supports",
+                "drupal/migrate_inline_image"
+            ]
+        },
+        {
+            "type": "vcs",
+            "url":  "git@github.com:solody/migrate_inline_image.git"
+        },
+        {
+            "type": "vcs",
+            "url":  "git@github.com:solody/product_adverts.git"
+        },
+        {
+            "type": "vcs",
+            "url":  "git@github.com:solody/adverts.git"
+        },
+        {
+            "type": "vcs",
+            "url":  "git@github.com:weeshop/weeshop_demo.git"
+        },
+        {
+            "type": "vcs",
+            "url":  "git@github.com:weeshop/WeeShop.git"
+        },
+        {
+            "type": "vcs",
+            "url":  "git@github.com:weeshop/weeshop_molla.git"
+        },
+        {
+            "type": "vcs",
+            "url":  "git@github.com:weeshop/weeshop_molla_supports.git"
+        },
+        {
+            "type": "vcs",
+            "url":  "git@github.com:solody/enhanced_product.git"
+        },
+        {
+            "type": "vcs",
+            "url":  "git@github.com:solody/enhanced_store.git"
         }
     ],
     "require": {
@@ -21,7 +69,8 @@
         "drupal/core-recipe-unpack": "^11.4",
         "drupal/core-recommended": "^11.4",
         "drush/drush": "^13.8",
-        "wikimedia/composer-merge-plugin": "^2.1"
+        "wikimedia/composer-merge-plugin": "^2.1",
+        "weeshop/weeshop": "1.0.x-dev"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -110,6 +159,20 @@
             "recurse": false,
             "replace": false,
             "merge-extra": false
+        },
+        "patchLevel": {
+            "drupal/core": "-p2"
+        },
+        "patches-issues": {
+            "drupal/entity_reference_revisions": "https://www.drupal.org/project/entity_reference_revisions/issues/2667748",
+            "drupal/commerce_stock": "https://www.drupal.org/project/commerce_stock/issues/3227650",
+            "drupal/mobile_number": "https://www.drupal.org/project/mobile_number/issues/3075958",
+            "drupal/core": "https://www.drupal.org/project/drupal/issues/3218573"
+        },
+        "patches": {
+            "drupal/core": {
+                "Views contextual filter summary doesn't works with multilingual": "https://www.drupal.org/files/issues/2021-06-13/0001-Issues-3218573-Views-contextual-filter-summary-dosen_0.patch"
+            }
         }
     },
     "require-dev": {
