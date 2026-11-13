@@ -1,0 +1,22 @@
+#!/bin/bash
+# Auto-maintained by tools/drupal-add-vcs-project.sh. Sourced by tools/drupal-replace-projects.sh.
+# Each line: <project_name> <branch> [git_url]  (branch is required)
+# Default git_url when omitted: git@github.com:solody/drupal-<project_name>.git
+#
+# Copy to project root:
+#   cp tools/drupal-vcs-projects.sh.dist drupal-vcs-projects.sh
+
+DRUPAL_VCS_MODULES="$(cat <<'EOF'
+address_for_china 1.0.x
+alipay 1.0.x
+mobile_number 1.0.x git@git.drupal.org:issue/mobile_number-3448775.git
+EOF
+)"
+
+DRUPAL_VCS_THEMES="$(cat <<'EOF'
+EOF
+)"
+
+DRUPAL_VCS_PROFILES="$(cat <<'EOF'
+EOF
+)"
